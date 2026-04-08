@@ -1,6 +1,22 @@
-# LED Matrix Server - OpenClaw 状态显示
+# Intrix 无限矩阵 / Intrix Seed
 
-控制 64×64 RGB LED 矩阵屏幕，显示 OpenClaw 工作状态、天气和 Token 消耗。
+<p align="center">
+  <img src="https://github.com/JemZhu/Intrix_Seed/blob/main/Intrix_LOGO.png" width="200" alt="Intrix Logo">
+</p>
+
+**Intrix 无限矩阵**（Infinity Matrix）是一款高度自由的 64×64 像素 RGB LED 屏幕控制服务端，4096 颗全彩 RGB LED 可显示 16 万种颜色。
+
+完全接入 Openclaw 生态，告诉他你想要显示什么，无需编写代码即可完成专属设计。
+
+<p align="center">
+  <img src="https://img.shields.io/badge/LED-64×64-FF5722?style=flat-square" alt="LED Size">
+  <img src="https://img.shields.io/badge/Python-3.11+-00ACC1?style=flat-square" alt="Python">
+  <img src="https://img.shields.io/badge/Platform-Linux/macOS-4CAF50?style=flat-square" alt="Platform">
+</p>
+
+---
+
+## 控制 64×64 RGB LED 矩阵屏幕，显示 OpenClaw 工作状态、天气和 Token 消耗。
 
 ## 启动说明
 
