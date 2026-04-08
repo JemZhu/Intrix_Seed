@@ -30,7 +30,7 @@ python3 server.py
 ```
 
 - **Web 界面**: http://localhost:5000
-- **TCP 端口**: 8080 (用于 ESP32 硬件连接)
+- **TCP 端口**: 8080 (用于 Intrix 硬件连接)
 
 ### 2. 状态监控器（获取天气 + Token 消耗）
 
@@ -194,6 +194,6 @@ curl -X POST http://localhost:5000/api/mode \
 
 ## 注意事项
 
-- 中文支持：需要 HZK12 或 HZK16 字库文件
+- 中文支持：需要 HZK12 或 HZK16 字库文件，要自己下载放到服务器目录中。
 - 分辨率：64×64 像素
 - 滚动字幕：中英文混合，英文 12px，中文 12px（HZK12）
