@@ -1,0 +1,262 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+3D 弹跳球主题 - 物理模拟的弹性球
+多球碰撞 + 重力 + 反弹，带 3D 投影视觉效果
+"""
+
+import math
+import random
+import time
+import numpy as np
+from PIL import Image, ImageDraw
+
+
+class BounceBallTheme:
+    """
+    3D 弹跳球效果
+    - 多球物理模拟：重力、碰撞、反弹
+    - 3D 等轴测投影（等角投影）
+    - 碰撞时发光 + 地面阴影
+    """
+
+    GRAVITY = 0.35
+    RESTITUTION = 0.72  # 弹性系数
+    FRICTION = 0.98      # 空气阻力
+    BALL_COUNT = 5
+
+    def __init__(self, width=64, height=64):
+        self.width = width
+        self.height = height
+        self.balls = []
+        self.t = 0.0
+        self._spawn_balls()
+
+    def _spawn_balls(self):
+        """生成初始球"""
+        self.balls = []
+        colors = [
+            (255, 60, 60),    # 红
+            (60, 180, 255),   # 天蓝
+            (255, 220, 60),   # 黄
+            (120, 255, 120),  # 绿
+            (255, 120, 255),  # 粉紫
+        ]
+        for i in range(self.BALL_COUNT):
+            # 随机等轴测位置
+            x_iso = random.uniform(10, self.width - 10)
+            y_iso = random.uniform(5, self.height * 0.6)
+            z_iso = random.uniform(0, 30)
+            vx = random.uniform(-2.0, 2.0)
+            vy = random.uniform(-3.0, 0.0)
+            vz = random.uniform(-1.0, 1.0)
+            r = random.uniform(4.0, 7.0)  # 球半径（3D 单位）
+            color = colors[i % len(colors)]
+            self.balls.append({
+                'x': x_iso, 'y': y_iso, 'z': z_iso,
+                'vx': vx, 'vy': vy, 'vz': vz,
+                'r': r,
+                'color': color,
+                'squash': 1.0,       # 碰地压扁程度
+                'squash_v': 0.0,     # squash 变化率
+                'glow': 0.0,         # 碰撞发光
+                'bounces': 0,
+            })
+
+    def generate_frame(self, status=None, t=None) -> np.ndarray:
+        if t is None:
+            t = time.time()
+        dt = 0.016  # 固定时间步
+        self.t = t
+
+        w, h = self.width, self.height
+
+        # 背景：深色地面
+        bg = np.full((h, w, 3), 15, dtype=np.uint8)
+        # 地面网格线（等轴测斜线）
+        img_bg = Image.fromarray(bg)
+        draw = ImageDraw.Draw(img_bg)
+        ground_y = h * 0.75
+        # 地面渐变
+        for gy in range(int(ground_y), h):
+            alpha = (gy - ground_y) / (h - ground_y)
+            shade = int(15 + alpha * 25)
+            for gx in range(w):
+                bg[gy, gx] = [shade, shade + 5, shade + 15]
+        # 地面网格
+        grid_color = (30, 40, 60)
+        for i in range(0, w, 6):
+            # 等轴测斜线（从左下到右上）
+            draw.line([(i, h), (w // 2, int(ground_y))], fill=grid_color, width=1)
+        for i in range(int(ground_y), h, 5):
+            draw.line([(0, i), (w, i)], fill=grid_color, width=1)
+
+        # 更新球物理
+        for ball in self.balls:
+            # 重力
+            ball['vy'] += self.GRAVITY
+
+            # 移动
+            ball['x'] += ball['vx'] * dt * 30
+            ball['y'] += ball['vy'] * dt * 30
+            ball['z'] += ball['vz']
+
+            # 空气阻力
+            ball['vx'] *= self.FRICTION
+            ball['vz'] *= self.FRICTION
+
+            # squash 恢复
+            ball['squash'] += ball['squash_v']
+            ball['squash_v'] += (1.0 - ball['squash']) * 0.2
+            ball['squash'] = max(0.6, min(1.3, ball['squash']))
+            ball['squash_v'] *= 0.8
+
+            # glow 衰减
+            ball['glow'] *= 0.85
+
+            # 地面碰撞（z=0）
+            if ball['z'] <= 0:
+                ball['z'] = 0
+                impact = abs(ball['vy'])
+                if impact > 0.5:
+                    ball['vy'] = -ball['vy'] * self.RESTITUTION
+                    ball['squash'] = max(0.5, 1.0 - impact * 0.08)
+                    ball['squash_v'] = impact * 0.04
+                    ball['glow'] = min(1.0, impact * 0.15)
+                    ball['bounces'] += 1
+                else:
+                    ball['vy'] = 0
+                    ball['z'] = 0
+
+            # 墙壁碰撞
+            if ball['x'] < ball['r']:
+                ball['x'] = ball['r']
+                ball['vx'] = abs(ball['vx']) * 0.85
+            if ball['x'] > w - ball['r']:
+                ball['x'] = w - ball['r']
+                ball['vx'] = -abs(ball['vx']) * 0.85
+
+            # 球间碰撞（简化）
+            for other in self.balls:
+                if other is ball:
+                    continue
+                dx = other['x'] - ball['x']
+                dy = other['y'] - ball['y']
+                dz = other['z'] - other['z']
+                dist = math.sqrt(dx**2 + dy**2 + dz**2)
+                min_d = ball['r'] + other['r']
+                if dist < min_d and dist > 0.01:
+                    # 简化弹性碰撞
+                    nx, ny = dx / dist, dy / dist
+                    rel_v = (ball['vx'] - other['vx']) * nx + (ball['vy'] - other['vy']) * ny
+                    if rel_v < 0:
+                        ball['vx'] -= rel_v * nx * 0.8
+                        ball['vy'] -= rel_v * ny * 0.8
+                        overlap = min_d - dist
+                        ball['x'] -= nx * overlap * 0.5
+                        ball['y'] -= ny * overlap * 0.5
+                        ball['glow'] = 0.6
+
+        # 绘制地面阴影（按 z 轴投影）
+        for ball in self.balls:
+            if ball['z'] < 0.1:
+                continue
+            shadow_dist = ball['z'] * 0.5
+            sx = ball['x']
+            sy = ball['y'] + ball['z'] * 0.3 + ball['r'] * 0.5
+            if sy > h - 2:
+                sy = h - 2
+            shadow_alpha = max(0.1, 0.6 - ball['z'] * 0.02)
+            shadow_r = int(ball['r'] * (1 - ball['z'] * 0.015))
+            if shadow_r < 1:
+                shadow_r = 1
+            # 椭圆形阴影
+            img_shadow = Image.new('L', (w, h), 0)
+            d_s = ImageDraw.Draw(img_shadow)
+            x0 = max(0, int(sx) - shadow_r)
+            y0 = max(0, int(sy) - shadow_r // 2)
+            x1 = min(w, int(sx) + shadow_r)
+            y1 = min(h, int(sy) + shadow_r // 2)
+            d_s.ellipse([x0, y0, x1, y1], fill=int(shadow_alpha * 255))
+            shadow_arr = np.array(img_shadow) / 255.0 * shadow_alpha
+            for c in range(3):
+                bg[:, :, c] = (bg[:, :, c] * (1 - shadow_arr)).astype(np.uint8)
+
+        # 绘制球（z 排序，远的先画）
+        sorted_balls = sorted(self.balls, key=lambda b: b['z'])
+
+        for ball in sorted_balls:
+            cr, cg, cb = ball['color']
+            squash = ball['squash']
+            glow = ball['glow']
+
+            # 球在 3D 等轴测投影后的大小
+            rx = int(ball['r'] * squash)
+            ry = int(ball['r'] / squash)
+            cx = int(ball['x'])
+            cy = int(ball['y'] - ball['z'] * 0.3)  # 近大远小
+
+            # 远处球淡出
+            z_fade = max(0.3, 1.0 - ball['z'] * 0.015)
+            r_f = int(cr * z_fade)
+            g_f = int(cg * z_fade)
+            b_f = int(cb * z_fade)
+
+            # 发光色（偏白）
+            if glow > 0.05:
+                glow_r = int(min(255, cr + (255 - cr) * glow))
+                glow_g = int(min(255, cg + (255 - cg) * glow))
+                glow_b = int(min(255, cb + (255 - cb) * glow))
+            else:
+                glow_r, glow_g, glow_b = r_f, g_f, b_f
+
+            # 画球（3D 圆形 + 高光 + 阴影）
+            x0 = max(0, cx - rx)
+            y0 = max(0, cy - ry)
+            x1 = min(w, cx + rx)
+            y1 = min(h, cy + ry)
+
+            if x1 <= x0 or y1 <= y0:
+                continue
+
+            for py in range(y0, y1):
+                for px in range(x0, x1):
+                    dx = (px - cx) / max(1, rx)
+                    dy = (py - cy) / max(1, ry)
+                    d2 = dx**2 + dy**2
+                    if d2 > 1.0:
+                        continue
+                    # 球面法线 → 高光
+                    nz = math.sqrt(max(0, 1 - d2))
+                    # 高光点（左上）
+                    light_x, light_y = -0.4, -0.4
+                    dot = dx * light_x + dy * light_y + nz * 0.7
+                    dot = max(0.0, dot)
+                    highlight = dot ** 1.5
+                    shadow_factor = 0.3 + 0.7 * (ny * 0.5 + 0.5)
+
+                    final_r = int(min(255, glow_r * shadow_factor + highlight * 80))
+                    final_g = int(min(255, glow_g * shadow_factor + highlight * 80))
+                    final_b = int(min(255, glow_b * shadow_factor + highlight * 80))
+
+                    alpha = 1.0 - (d2 ** 0.5) * 0.3
+                    bg[py, px] = [
+                        int(bg[py, px, 0] * (1 - alpha) + final_r * alpha),
+                        int(bg[py, px, 1] * (1 - alpha) + final_g * alpha),
+                        int(bg[py, px, 2] * (1 - alpha) + final_b * alpha),
+                    ]
+
+        return bg
+
+
+if __name__ == '__main__':
+    theme = BounceBallTheme()
+    import os
+    os.makedirs('/home/jem/Intrix_Seed/themes/test_frames', exist_ok=True)
+    for i in range(24):
+        t = i * 0.04
+        frame = theme.generate_frame(t=t)
+        img = Image.fromarray(frame)
+        img.save(f'/home/jem/Intrix_Seed/themes/test_frames/bounce_{i:02d}.png')
+    print("Saved 24 frames")
+    print(f"Stats: max={frame.max()}, mean={frame.mean():.1f}")
