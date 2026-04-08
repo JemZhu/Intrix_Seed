@@ -31,9 +31,11 @@ python3 server.py
 
 - **Web 界面**: http://localhost:5000
 
-![Web UI](https://github.com/JemZhu/Intrix_Seed/blob/main/screenshots/WebUI.png)
-
 - **TCP 端口**: 8080 (用于 Intrix 硬件连接)
+
+- ![Web UI](https://github.com/JemZhu/Intrix_Seed/blob/main/screenshots/WebUI.png)
+- 已经预设类非常多的效果主题，自己可以再增加想要的主题。 web页面继承了预览效果
+- 
 
 ### 2. 状态监控器（获取天气 + Token 消耗）
 
