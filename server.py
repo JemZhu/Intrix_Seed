@@ -223,14 +223,20 @@ class LEDMatrixServer:
             print(f"   Info: {client_info}")
 
             with self.lock:
+                client_id = f"{addr[0]}:{addr[1]}"
                 self.clients[addr] = {
                     'socket': client_sock,
                     'info': client_info,
                     'connected_at': time.time(),
-                    'frame_count': 0
+                    'frame_count': 0,
+                    'client_id': client_id,
+                    'current_mode': 'openclaw_status',  # 每个客户端独立主题
+                    'custom_text': 'HELLO',             # 每个客户端独立文字
+                    'brightness': self.brightness,       # 每个客户端独立亮度
+                    'anim_frame': 0                       # 每个客户端独立动画帧
                 }
 
-            self._send_brightness(client_sock, self.brightness)
+            self._send_brightness(client_sock, self.clients[addr]['brightness'])
 
             while self.running:
                 try:
@@ -255,41 +261,64 @@ class LEDMatrixServer:
                 pass
 
     def _broadcast_loop(self):
-        """广播图像数据"""
-        render_interval = 0.050  # ~20fps 渲染
+        """广播图像数据 - 每客户端独立主题"""
         last_render = 0
-        cached_frame = None
 
         while self.running:
             if self.clients:
                 try:
                     now = time.time()
-
-                    # 每 render_interval 秒才重新生成一帧并发送
                     render_interval = 0.067 / max(0.5, self.animation_speed)
-                    if now - last_render >= render_interval:
-                        cached_frame = self._generate_frame()
-                        self.preview_image = cached_frame.copy()
-                        last_render = now
-                        self._send_frame_to_all(cached_frame)
 
+                    if now - last_render >= render_interval:
+                        # 为预览生成主帧（使用第一个在线客户端的模式或默认）
+                        preview_frame = None
                         with self.lock:
-                            self.frame_count += 1
-                            self._fps_frames += 1
-                            # 滑动窗口计算 FPS（最近1秒）
-                            if now - self._fps_window_start >= self._fps_window_seconds:
-                                self.fps = self._fps_frames / (now - self._fps_window_start)
-                                self._fps_frames = 0
-                                self._fps_window_start = now
+                            client_modes = [c.get('current_mode', 'openclaw_status') for c in self.clients.values()]
+                            preview_mode = client_modes[0] if client_modes else 'openclaw_status'
+                            self.anim_frame += 1
+
+                        # 为每个客户端生成并发送各自主题的帧
+                        disconnected = []
+                        with self.lock:
+                            for addr, client in list(self.clients.items()):
+                                try:
+                                    mode = client.get('current_mode', 'openclaw_status')
+                                    frame = self._generate_frame_for_client(mode, client)
+                                    self._send_frame_to_client(client['socket'], frame)
+                                    client['frame_count'] += 1
+                                    if preview_frame is None:
+                                        preview_frame = frame.copy()
+                                except Exception as e:
+                                    print(f"❌ Send to {addr} failed: {e}")
+                                    disconnected.append(addr)
+
+                            # 清理断开的客户端
+                            for addr in disconnected:
+                                if addr in self.clients:
+                                    try:
+                                        self.clients[addr]['socket'].close()
+                                    except:
+                                        pass
+                                    del self.clients[addr]
+
+                        if preview_frame is not None:
+                            self.preview_image = preview_frame
+
+                        last_render = now
+                        self.frame_count += 1
+                        self._fps_frames += 1
+                        if now - self._fps_window_start >= self._fps_window_seconds:
+                            self.fps = self._fps_frames / (now - self._fps_window_start)
+                            self._fps_frames = 0
+                            self._fps_window_start = now
 
                 except Exception as e:
                     print(f"❌ Broadcast error: {e}")
 
-                time.sleep(0.001 / self.animation_speed)
+                time.sleep(0.001)
             else:
-                # 没有客户端时降低帧率，避免空转耗电
                 time.sleep(0.5)
-                cached_frame = None
                 last_render = 0
 
     def _generate_frame(self) -> np.ndarray:
@@ -1390,6 +1419,80 @@ class LEDMatrixServer:
         rgb565 = ((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3)
         return rgb565.astype(np.uint16).tobytes()
 
+    def _generate_frame_for_client(self, mode: str, client: dict) -> np.ndarray:
+        """为特定客户端生成帧（基于该客户端的模式）"""
+        self.anim_frame += 1
+        t = time.time()
+
+        # 获取该客户端的自定义数据
+        custom_text = client.get('custom_text', 'HELLO')
+
+        if mode == 'openclaw_status':
+            return self._generate_openclaw_status_frame()
+        elif mode == 'demo':
+            return self._generate_demo_frame()
+        elif mode == 'rainbow':
+            return self._generate_rainbow_frame()
+        elif mode == 'text':
+            return self._generate_text_frame(custom_text)
+        elif mode == 'clock':
+            return self._generate_clock_frame()
+        elif mode == 'matrix':
+            return self._generate_matrix_rain()
+        elif mode == 'pulse':
+            return self._generate_pulse()
+        elif mode == 'kitten':
+            return self._generate_kitten_frame()
+        elif mode == 'vocab':
+            return self._generate_vocab_frame()
+        elif mode == 'calendar':
+            return self._generate_calendar_frame()
+        elif mode == 'bitcoin':
+            return self._generate_bitcoin_frame()
+        elif mode == 'fortune':
+            return self._generate_fortune_frame()
+        elif mode == 'stock':
+            return self._generate_stock_frame()
+        elif mode == 'gif':
+            return self._generate_gif_frame()
+        elif mode == 'fireworks':
+            return self._generate_fireworks_frame()
+        elif mode == 'lava':
+            return self._generate_lava_frame()
+        elif mode == 'snow':
+            return self._generate_snow_frame()
+        elif mode == 'plasma':
+            return self._generate_plasma_frame()
+        elif mode == 'warp':
+            return self._generate_warp_frame()
+        elif mode == 'aurora':
+            return self._generate_aurora_frame()
+        elif mode == 'ripple':
+            return self._generate_ripple_frame()
+        elif mode == 'cube':
+            return self._generate_cube_frame()
+        elif mode == 'bounce':
+            return self._generate_bounce_frame()
+        elif mode == 'image' and self.custom_image is not None:
+            return self.custom_image
+        else:
+            return self._generate_openclaw_status_frame()
+
+    def _send_frame_to_client(self, sock, rgb_array: np.ndarray):
+        """发送帧到单个客户端"""
+        rgb565_data = self._rgb_to_rgb565(rgb_array)
+        data_size = len(rgb565_data)
+        header = {
+            "type": "frame_data",
+            "width": self.width,
+            "height": self.height,
+            "format": "RGB565",
+            "data_size": data_size
+        }
+        header_json = json.dumps(header) + '\n'
+        sock.send(header_json.encode('utf-8'))
+        sock.sendall(rgb565_data)
+
     def _send_frame_to_all(self, rgb_array: np.ndarray):
         """发送帧到所有客户端"""
         rgb565_data = self._rgb_to_rgb565(rgb_array)
@@ -1433,8 +1536,26 @@ class LEDMatrixServer:
             pass
 
     def set_mode(self, mode: str):
+        """设置全局默认主题（所有未单独设置的客户端使用此主题）"""
         self.current_mode = mode
-        print(f"🎨 Mode: {mode}")
+        print(f"🎨 Global mode: {mode}")
+
+    def set_client_mode(self, client_id: str, mode: str):
+        """为指定客户端设置独立主题"""
+        with self.lock:
+            for addr, client in self.clients.items():
+                if client.get('client_id') == client_id:
+                    client['current_mode'] = mode
+                    print(f"🎨 Client {client_id} mode: {mode}")
+                    return True
+        return False
+
+    def set_all_clients_mode(self, mode: str):
+        """为所有已连接客户端设置相同主题"""
+        with self.lock:
+            for addr, client in self.clients.items():
+                client['current_mode'] = mode
+        print(f"🎨 All clients mode: {mode}")
 
     def set_brightness(self, brightness: int):
         self.brightness = max(0, min(253, brightness))  # 254/255 跳过，ESP32 库有 bug
@@ -1653,11 +1774,17 @@ HTML_TEMPLATE = '''
         </header>
 
         <div class="status-bar">
-            <span>模式: <span class="value" id="curMode">-</span></span>
+            <span>全局模式: <span class="value" id="curMode">-</span></span>
             <span>FPS: <span class="value" id="fpsDisplay">-</span></span>
             <span>客户端: <span class="value" id="clientsDisplay">-</span></span>
             <span>CPU: <span class="value" id="cpuDisplay">-</span></span>
             <span>内存: <span class="value" id="memDisplay">-</span></span>
+        </div>
+
+        <!-- Per-client control section -->
+        <div class="card" id="clientControlSection" style="display:none;">
+            <h2>📱 客户端控制 <span id="clientCount" style="font-size:14px;color:#aaa;"></span></h2>
+            <div id="clientList" style="margin-top:10px;"></div>
         </div>
 
         <div class="grid">
@@ -1792,12 +1919,13 @@ HTML_TEMPLATE = '''
 
     <script>
         async function setMode(mode) {
+            // 全局模式：设置所有未单独分配的客户端
             console.log('setMode called with:', mode);
             try {
-                const res = await fetch('/api/mode', {
+                const res = await fetch('/api/client/mode', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
-                    body: JSON.stringify({mode})
+                    body: JSON.stringify({client_id: 'all', mode})
                 });
                 console.log('Response status:', res.status);
                 const data = await res.json();
@@ -1807,6 +1935,73 @@ HTML_TEMPLATE = '''
                     updatePreview();
                 }
             } catch(e) { console.error('切换失败:', e); alert('切换失败: ' + e.message); }
+        }
+
+        async function setClientMode(clientId, mode) {
+            try {
+                const res = await fetch('/api/client/mode', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({client_id: clientId, mode})
+                });
+                const data = await res.json();
+                if (!data.success) alert('设置失败: ' + data.error);
+                else updateClientList();
+            } catch(e) { alert('设置失败: ' + e.message); }
+        }
+
+        function updateClientList() {
+            fetch('/api/status')
+                .then(r => r.json())
+                .then(data => {
+                    const section = document.getElementById('clientControlSection');
+                    const list = document.getElementById('clientList');
+                    const count = document.getElementById('clientCount');
+                    const clients = data.client_list || [];
+
+                    if (clients.length === 0) {
+                        section.style.display = 'none';
+                        return;
+                    }
+
+                    section.style.display = 'block';
+                    count.textContent = `(${clients.length} 台)`;
+
+                    const MODES = [
+                        ['openclaw_status','🖥️ 状态'],['demo','🎨 演示'],['rainbow','🌈 彩虹'],
+                        ['text','📝 文字'],['clock','🕐 时钟'],['matrix','💻 代码雨'],
+                        ['kitten','😺 小猫'],['vocab','📚 单词'],['calendar','📅 日历'],
+                        ['bitcoin','₿ 比特币'],['fortune','☘ 运势'],['stock','📈 A股'],
+                        ['gif','🖼️ GIF'],['fireworks','🎆 烟花'],['lava','🔥 熔岩灯'],
+                        ['snow','❄️ 雪花'],['plasma','🌊 波浪'],['warp','🌌 星空'],
+                        ['aurora','🌈 极光'],['ripple','💧 水波'],['cube','📦 方块'],
+                        ['bounce','🏀 弹球'],
+                    ];
+
+                    let html = '';
+                    clients.forEach((c, i) => {
+                        const cid = c.client_id;
+                        const info = c.info || {};
+                        const name = info.name || info.device_id || cid;
+                        const curMode = c.current_mode || 'openclaw_status';
+                        const online = c.connected_at > 0 ? '🟢' : '⚫';
+                        html += `
+                        <div style="background:#1a1a2e;border-radius:8px;padding:12px;margin-bottom:10px;border:1px solid #333;">
+                            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                                <span style="font-weight:bold;color:#00d4ff;">${online} ${name}</span>
+                                <span style="font-size:12px;color:#888;">${cid}</span>
+                                <span style="font-size:11px;color:#666;">${c.frames} frames</span>
+                            </div>
+                            <div style="font-size:11px;color:#aaa;margin-bottom:6px;">当前: <span style="color:#00f5d4;" id="cmode_${i}">${curMode}</span></div>
+                            <div style="display:flex;flex-wrap:wrap;gap:4px;">`;
+                        MODES.forEach(([m, label]) => {
+                            const active = curMode === m ? 'background:rgba(0,212,255,0.3);border-color:#00d4ff;' : 'background:#2a2a4a;border-color:#444;';
+                            html += `<button class="mode-btn" style="padding:4px 6px;font-size:11px;${active}" onclick="setClientMode('${cid}','${m}')">${label}</button>`;
+                        });
+                        html += '</div></div>';
+                    });
+                    list.innerHTML = html;
+                });
         }
 
         function updateBrightness(val) {
@@ -1923,9 +2118,11 @@ HTML_TEMPLATE = '''
 
         // Init
         updateStatus();
+        updateClientList();
         loadStockCodes();
         setInterval(updateStatus, 2000);
         setInterval(updatePreview, 500);
+        setInterval(updateClientList, 3000);
     </script>
 </body>
 </html>
@@ -1942,9 +2139,14 @@ def api_status():
         client_list = []
         for addr, client in led_server.clients.items():
             client_list.append({
+                'client_id': client.get('client_id', f"{addr[0]}:{addr[1]}"),
                 'addr': f"{addr[0]}:{addr[1]}",
                 'info': client['info'],
-                'frames': client.get('frame_count', 0)
+                'frames': client.get('frame_count', 0),
+                'current_mode': client.get('current_mode', 'openclaw_status'),
+                'custom_text': client.get('custom_text', ''),
+                'brightness': client.get('brightness', led_server.brightness),
+                'connected_at': client.get('connected_at', 0),
             })
 
         return jsonify({
@@ -1956,6 +2158,71 @@ def api_status():
             'client_list': client_list,
             'speed': led_server.animation_speed
         })
+
+
+@app.route('/api/client/mode', methods=['POST'])
+def api_client_mode():
+    """为指定客户端设置主题"""
+    data = request.json
+    client_id = data.get('client_id')  # 如 "192.168.1.100:8000"
+    mode = data.get('mode')
+
+    if not client_id or not mode:
+        return jsonify({'success': False, 'error': 'client_id and mode required'}), 400
+
+    # special: "all" means all clients
+    if client_id == 'all':
+        led_server.set_all_clients_mode(mode)
+        return jsonify({'success': True, 'client_id': 'all', 'mode': mode})
+
+    success = led_server.set_client_mode(client_id, mode)
+    if success:
+        return jsonify({'success': True, 'client_id': client_id, 'mode': mode})
+    else:
+        return jsonify({'success': False, 'error': f'Client {client_id} not found'}), 404
+
+
+@app.route('/api/client/text', methods=['POST'])
+def api_client_text():
+    """为指定客户端设置自定义文字"""
+    data = request.json
+    client_id = data.get('client_id')
+    text = data.get('text', '')
+
+    if not client_id:
+        return jsonify({'success': False, 'error': 'client_id required'}), 400
+
+    with led_server.lock:
+        for addr, client in led_server.clients.items():
+            if client.get('client_id') == client_id:
+                client['custom_text'] = text
+                return jsonify({'success': True, 'client_id': client_id, 'text': text})
+
+    return jsonify({'success': False, 'error': f'Client {client_id} not found'}), 404
+
+
+@app.route('/api/client/brightness', methods=['POST'])
+def api_client_brightness():
+    """为指定客户端设置亮度"""
+    data = request.json
+    client_id = data.get('client_id')
+    brightness = data.get('brightness', 200)
+
+    if not client_id:
+        return jsonify({'success': False, 'error': 'client_id required'}), 400
+
+    with led_server.lock:
+        for addr, client in led_server.clients.items():
+            if client.get('client_id') == client_id:
+                client['brightness'] = brightness
+                try:
+                    cmd = {"type": "brightness", "value": brightness}
+                    client['socket'].send((json.dumps(cmd) + '\n').encode('utf-8'))
+                except:
+                    pass
+                return jsonify({'success': True, 'client_id': client_id, 'brightness': brightness})
+
+    return jsonify({'success': False, 'error': f'Client {client_id} not found'}), 404
 
 
 @app.route('/api/openclaw-status')
