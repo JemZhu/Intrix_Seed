@@ -6,7 +6,24 @@ ESP32-S3 HUB75 LED Matrix Server with OpenClaw Status Display
 """
 # --- deploy: resolve project assets relative to this file (macOS-safe) ---
 import os as _os
-BASE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.environ.get("INTRIX_HOME") or _os.path.dirname(_os.path.abspath(__file__))
+
+def _first_existing(paths):
+    for _p in paths:
+        try:
+            if _p and _os.path.isfile(_p):
+                return _p
+        except Exception:
+            pass
+    return ""
+
+
+# 小号等宽字体：安卓/容器里没有 /usr/share/fonts，回退到包内 quan.ttf
+_MONO_FONT = _first_existing([
+    _os.path.join(BASE_DIR, "DejaVuSans.ttf"),
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    _os.path.join(BASE_DIR, "quan.ttf"),
+])
 
 
 import os
@@ -68,10 +85,11 @@ app = Flask(__name__)
 
 
 class LEDMatrixServer:
-    def __init__(self, tcp_host='0.0.0.0', tcp_port=8080, web_port=5050, width=64, height=64):
+    def __init__(self, tcp_host='0.0.0.0', tcp_port=8080, web_port=5050, width=64, height=64, web_host='0.0.0.0'):
         self.tcp_host = tcp_host
         self.tcp_port = tcp_port
         self.web_port = web_port
+        self.web_host = web_host
         self.width = width
         self.height = height
 
@@ -227,7 +245,7 @@ class LEDMatrixServer:
         print(f"📡 TCP端口: {self.tcp_port}")
         from flask_cors import CORS
         CORS(app, resources={r"/api/pearl-data": {"origins": "*"}})
-        app.run(host='0.0.0.0', port=self.web_port, debug=False, use_reloader=False)
+        app.run(host=self.web_host, port=self.web_port, debug=False, use_reloader=False)
 
     def stop(self):
         self.running = False
@@ -1514,7 +1532,7 @@ class LEDMatrixServer:
         uptime_str = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
         try:
-            font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 5)
+            font = ImageFont.truetype(_MONO_FONT, 5)
         except:
             font = ImageFont.load_default()
 
@@ -4167,6 +4185,7 @@ def main():
     parser = argparse.ArgumentParser(description='LED Matrix Web Server')
     parser.add_argument('--tcp-port', type=int, default=8080, help='TCP port for ESP32')
     parser.add_argument('--web-port', type=int, default=5050, help='Web interface port')
+    parser.add_argument('--web-host', default='0.0.0.0', help='Web interface bind host')
     parser.add_argument('--width', type=int, default=64, help='Panel width')
     parser.add_argument('--height', type=int, default=64, help='Panel height')
 
@@ -4176,6 +4195,7 @@ def main():
     led_server = LEDMatrixServer(
         tcp_port=args.tcp_port,
         web_port=args.web_port,
+        web_host=args.web_host,
         width=args.width,
         height=args.height
     )
