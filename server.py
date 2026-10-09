@@ -25,6 +25,13 @@ _MONO_FONT = _first_existing([
     _os.path.join(BASE_DIR, "quan.ttf"),
 ])
 
+# --- TLS 根证书兜底：安卓(p4a)编出的 Python 找不到 CA 库，启动时装一份 ---
+try:
+    from pixellife import netsafe as _netsafe
+    _netsafe.install()
+except Exception as _e:                                 # noqa: BLE001
+    pass
+
 
 import os
 import socket
@@ -2421,6 +2428,12 @@ HTML_TEMPLATE = '''
                     </div>
                     <div id="wlPreview" style="margin-top:10px;padding:8px;background:#101018;border:1px solid #26263a;border-radius:6px;font-size:11px;color:#aab;line-height:1.7;max-height:300px;overflow-y:auto;"></div>
                     <div id="wlStatus" style="margin-top:6px;font-size:11px;color:#aaa;"></div>
+                    <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+                        <span style="font-size:11px;color:#666;">🔒 CA</span>
+                        <span id="wlCa" style="flex:1;font-size:11px;color:#888;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">—</span>
+                        <button class="btn-primary" onclick="netTest()" style="width:98px;padding:4px 0;">🌐 联网自检</button>
+                    </div>
+                    <div id="wlNet" style="margin-top:6px;font-size:11px;color:#aab;line-height:1.7;"></div>
                 </div>
             </div>
             <div id="noThemePanel" class="hint" style="display:none;">
@@ -2956,6 +2969,42 @@ HTML_TEMPLATE = '''
             if (!ks.length) return '—';
             return ks.map(k => k + ' ' + hot[k]).join(' / ');
         }
+
+        async function loadNetInfo() {
+            try {
+                const r = await fetch('/api/pixellife/nettest');
+                const d = await r.json();
+                if (d.error) return;
+                const el = document.getElementById('wlCa');
+                if (el) el.textContent = (d.source || '?') + ' · ' +
+                                        (d.cafile || d.cadir || '系统默认');
+            } catch(e) {}
+        }
+
+        async function netTest() {
+            const box = document.getElementById('wlNet');
+            box.textContent = '⏳ 正在访问 抖音 / B站 / 新闻 / 天气…';
+            try {
+                const r = await fetch('/api/pixellife/nettest', {
+                    method: 'POST', headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({probe: 1})
+                });
+                const d = await r.json();
+                if (d.error) { box.textContent = '❌ ' + d.error; return; }
+                const ca = document.getElementById('wlCa');
+                if (ca) ca.textContent = (d.source || '?') + ' · ' +
+                                        (d.cafile || d.cadir || '系统默认');
+                box.innerHTML = (d.results || []).map(x =>
+                    x.ok ? ('✅ ' + x.name + ' <span style="color:#666">HTTP ' +
+                            x.status + ' · ' + x.bytes + 'B</span>')
+                         : ('❌ ' + x.name + ' <span style="color:#c66">' +
+                            x.error + '</span>')
+                ).join('<br>');
+            } catch(e) { box.textContent = '❌ ' + e.message; }
+        }
+
+        setTimeout(loadNetInfo, 1200);
+
 
         async function refreshWorldLog() {
             try {
@@ -3842,6 +3891,29 @@ def api_pixellife_display():
         return jsonify(th.sim.display_status())
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/pixellife/nettest', methods=['GET', 'POST'])
+def api_pixellife_nettest():
+    """联网自检：证书库来源 + 外部 API 实际连通性（安卓排障用）。
+
+    GET  -> 只返回证书信息（source / cafile / cadir）
+    POST -> {"probe": 1} 时真的去访问抖音 / B站 / 新闻 / 天气
+    """
+    try:
+        from pixellife import netsafe
+        netsafe.install()
+        info = netsafe.info()
+        results = []
+        if request.method == 'POST':
+            body = request.json or {}
+            if body.get('probe') or request.args.get('probe'):
+                results = netsafe.probe(netsafe.DEFAULT_TARGETS)
+        return jsonify(ok=True, source=info.get('source'),
+                       cafile=info.get('cafile'), cadir=info.get('cadir'),
+                       system_ok=info.get('system_ok'), results=results)
+    except Exception as e:                              # noqa: BLE001
+        return jsonify(error=str(e))
 
 
 @app.route('/api/pixellife/worldlog', methods=['GET', 'POST'])

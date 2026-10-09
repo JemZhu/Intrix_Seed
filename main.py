@@ -16,7 +16,7 @@ On a desktop this file prints a hint and exits - run `python server.py`.
 import os
 import time
 
-__version__ = "6.17.0"
+__version__ = "6.17.1"
 
 SERVICE_CLASS = "com.jem.intrix.ServiceIntrix"
 

@@ -45,6 +45,16 @@ DEFAULTS = dict(
 
 
 # ─── config ─────────────────────────────────────────────────────────
+try:                                                   # noqa: BLE001
+    from .netsafe import https_context as _ssl_ctx
+except Exception:                                      # noqa: BLE001
+    try:
+        from netsafe import https_context as _ssl_ctx
+    except Exception:                                  # noqa: BLE001
+        def _ssl_ctx():
+            return None
+
+
 class Config(object):
     """Thread-safe, file-backed settings."""
 
@@ -377,7 +387,8 @@ class Pool(object):
                                      method="POST")
         t0 = time.time()
         try:
-            with urllib.request.urlopen(req, timeout=float(cfg.get("timeout"))) as r:
+            with urllib.request.urlopen(req, timeout=float(cfg.get("timeout")),
+                                    context=_ssl_ctx()) as r:
                 raw = r.read().decode("utf-8", "replace")
             data = json.loads(raw)
             choice = (data.get("choices") or [{}])[0]
@@ -455,7 +466,8 @@ class Pool(object):
             headers["Authorization"] = "Bearer " + str(cfg["api_key"])
         try:
             req = urllib.request.Request(base + "/models", headers=headers)
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=timeout,
+                                    context=_ssl_ctx()) as r:
                 data = json.loads(r.read().decode("utf-8", "replace"))
             ids = []
             for m in (data.get("data") or []):

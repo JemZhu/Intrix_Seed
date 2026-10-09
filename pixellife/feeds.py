@@ -138,6 +138,16 @@ def effect_of(icon):
 
 
 # ─── HTTP ───────────────────────────────────────────────────────────
+try:                                                   # noqa: BLE001
+    from .netsafe import https_context as _ssl_ctx
+except Exception:                                      # noqa: BLE001
+    try:
+        from netsafe import https_context as _ssl_ctx
+    except Exception:                                  # noqa: BLE001
+        def _ssl_ctx():
+            return None
+
+
 def _get_json(url, timeout=10, api_key=None, extra=None):
     headers = {"User-Agent": UA, "Accept": "application/json"}
     if api_key:
@@ -145,7 +155,8 @@ def _get_json(url, timeout=10, api_key=None, extra=None):
     if extra:
         headers.update(extra)
     req = urllib.request.Request(url, headers=headers, method="GET")
-    with urllib.request.urlopen(req, timeout=timeout) as r:
+    with urllib.request.urlopen(req, timeout=timeout,
+                                context=_ssl_ctx()) as r:
         raw = r.read().decode("utf-8", "replace")
     return json.loads(raw)
 

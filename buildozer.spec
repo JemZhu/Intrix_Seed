@@ -13,7 +13,7 @@ package.domain = com.jem
 source.dir = .
 
 # (list) Source files to include (let-empty to include all the files)
-source.include_exts = py,png,jpg,jpeg,gif,json,ttf,otf,ttc,md,txt,xml,csv
+source.include_exts = py,png,jpg,jpeg,gif,json,ttf,otf,ttc,md,txt,xml,csv,pem
 
 # (list) List of directories to exclude
 source.exclude_dirs = venv,venv_new,logs,preview,client,screenshots,themes_backup_2026-04-21,t618,__pycache__,.git
@@ -22,12 +22,12 @@ source.exclude_dirs = venv,venv_new,logs,preview,client,screenshots,themes_backu
 source.exclude_patterns = *NotoSansCJK*,*wqy-zenhei*,*.bak_*,patch_v*.py,smoke_v*.py,probe_*.py,fetch_pearl*,led_status_updater.py,openclaw_monitor.py,*.bak
 
 # (str) Application versioning (method 1)
-version = 6.17.0
+version = 6.17.1
 
 # (list) Application requirements
 # flask recipe pulls jinja2/werkzeug/click/itsdangerous; flask-cors is pure
 # python and installed by pip. pillow + numpy have real p4a recipes.
-requirements = python3,flask,flask-cors,pillow,numpy,pyjnius
+requirements = python3,flask,flask-cors,pillow,numpy,pyjnius,certifi
 
 # (str) Custom source folders for requirements
 # (list) Garden requirements

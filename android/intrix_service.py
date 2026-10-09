@@ -17,7 +17,7 @@ import os
 import sys
 import time
 
-__version__ = "6.17.0"
+__version__ = "6.17.1"
 
 WEB_PORT = int(os.environ.get("INTRIX_WEB_PORT", "5000"))
 TCP_PORT = int(os.environ.get("INTRIX_TCP_PORT", "8080"))
@@ -102,6 +102,12 @@ def main():
     sys.argv = ["server.py",
                 "--web-port", str(WEB_PORT),
                 "--tcp-port", str(TCP_PORT)]
+
+    try:
+        from pixellife import netsafe
+        print('[intrix] CA bundle: %s' % (netsafe.install(),))
+    except Exception as e:
+        print('[intrix] netsafe failed: %r' % (e,))
 
     import server
 
