@@ -682,7 +682,7 @@ class Feeds(object):
         if not url:
             raise ValueError("%s 热榜地址为空" % label)
         self._net_calls += 1
-        payload = _get_json(url, timeout=12, api_key=cfg.get("hot_api_key"),
+        payload = _get_json(url, timeout=20, api_key=cfg.get("hot_api_key"),
                             extra=HOT_EXTRA_HEADERS.get(kind))
         items = _parse_hot(payload)
         if not items:
