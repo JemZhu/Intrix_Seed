@@ -11,7 +11,12 @@
 > gifclock / cyberclock / kitten / fireworks / lava / vocab / calendar 等 20 多个主题，
 > 全部由同一份 `server.py` 承载，通过 `themes/theme_manager.py` 调度。
 
-![Web 控制台](screenshots/WebUI.png)
+<p align="center">
+  <img src="screenshots/screen-scenes.png" width="840"
+       alt="像素人生：雨天户外 / 雪天户外 / 公园白天 / 夜间看书">
+</p>
+
+<p align="center"><sub>屏幕实际输出的四帧（64×64 点阵屏，放大 8 倍）</sub></p>
 
 ---
 
@@ -69,6 +74,54 @@ Intrix_API_Guide.md       # TCP 协议与 REST 接口文档
 - **有天气特效**：下雨 / 下雪时户外场景会有粒子效果；左上角的天气图标显示当日最高/最低温。
 
 LLM 是可选项 —— 关掉之后他仍然会按规则生活，只是不会说话和思考。
+
+## 截图
+
+**屏幕输出**（`/api/preview` 抓取，放大 8 倍）
+
+| 雨天户外 | 雪天户外 |
+|---|---|
+| <img src="screenshots/screen-rain.png" width="280" alt="雨天户外"> | <img src="screenshots/screen-snow.png" width="280" alt="雪天户外"> |
+
+顶部一行是状态栏（天气图标 + 当日最高/最低温 · 体力 · 心情 · 金钱），底部是滚动字幕。
+下雨 / 下雪时户外场景会叠加粒子特效。
+
+**Web 控制台**（浏览器打开 `http://<主机>:5050`）
+
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="screenshots/panel-screen.png" alt="实时预览"></td>
+    <td width="50%" align="center"><img src="screenshots/panel-brain.png" alt="AI 大脑与 Token 消耗"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>实时预览：屏幕当前画面，可切主题</sub></td>
+    <td align="center"><sub>AI 大脑：LLM 后端设置 + Token 消耗累计</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/panel-sources.png" alt="外部信息源"></td>
+    <td align="center"><img src="screenshots/panel-residents.png" alt="居民档案与决策日志"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>外部信息源：新闻 / 天气 / 三家热榜，可改源、改城市、改刷新间隔</sub></td>
+    <td align="center"><sub>像素居民档案 + 他最近的决策与内心活动</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/panel-chat.png" alt="和主角说话"></td>
+    <td align="center"><img src="screenshots/panel-worldlog.png" alt="世界日志"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>和主角说话：直接对话影响他的心情与下一步行动</sub></td>
+    <td align="center"><sub>世界日志：天气 / 新闻 / 热榜按天归档，上限 10000 天</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="screenshots/panel-memory.png" alt="长期记忆"></td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>长期记忆：日记、愿望清单、记忆条数与每日上限</sub></td>
+    <td align="center"></td>
+  </tr>
+</table>
 
 ## LLM 配置
 
