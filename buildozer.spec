@@ -52,8 +52,8 @@ services = Intrix:android/intrix_service.py:foreground:sticky:foregroundServiceT
 # (int) Target Android API
 android.api = 34
 
-# (int) Minimum API your APK will support
-android.minapi = 23
+# (int) Minimum API your APK will support (numpy recipe requires >= 24)
+android.minapi = 24
 
 # (str) Android archs to build for
 android.archs = arm64-v8a
