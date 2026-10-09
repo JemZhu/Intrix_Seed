@@ -91,6 +91,10 @@ ALL_MODES = [
 app = Flask(__name__)
 
 
+# TCP 客户端 socket 超时（秒）。短一点，免得一条死连接把整个广播循环卡住。
+TCP_CLIENT_TIMEOUT = 2.0
+
+
 class LEDMatrixServer:
     def __init__(self, tcp_host='0.0.0.0', tcp_port=8080, web_port=5050, width=64, height=64, web_host='0.0.0.0'):
         self.tcp_host = tcp_host
@@ -279,6 +283,7 @@ class LEDMatrixServer:
                 # 优化TCP发送性能
                 client_sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 65536)  # 64KB 发送缓冲区
                 client_sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)  # 禁用Nagle算法
+                self._tune_client_socket(client_sock)
                 client_thread = threading.Thread(
                     target=self._handle_client,
                     args=(client_sock, addr)
@@ -289,12 +294,36 @@ class LEDMatrixServer:
                 if self.running:
                     print(f"❌ Accept error: {e}")
 
+    def _tune_client_socket(self, sock):
+        """半开连接兜底：手机息屏后链路会静默断开，靠内核 keepalive 发现。
+
+        空闲 20s 开始探活，每 10s 一次，连续 3 次没回应（约 50s）内核就把
+        socket 置错，发送随即失败，客户端被清掉 —— 不用等对方重启。
+        """
+        try:
+            sock.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
+        except Exception:
+            pass
+        for name, val in (("TCP_KEEPIDLE", 20), ("TCP_KEEPINTVL", 10),
+                          ("TCP_KEEPCNT", 3)):
+            opt = getattr(socket, name, None)
+            if opt is None:      # macOS 没有 TCP_KEEPIDLE，跳过
+                continue
+            try:
+                sock.setsockopt(socket.IPPROTO_TCP, opt, val)
+            except Exception:
+                pass
+        try:
+            sock.settimeout(TCP_CLIENT_TIMEOUT)
+        except Exception:
+            pass
+
     def _handle_client(self, client_sock, addr):
         """处理客户端连接"""
         print(f"📱 New client: {addr}")
 
         try:
-            client_sock.settimeout(5.0)
+            client_sock.settimeout(TCP_CLIENT_TIMEOUT)
             data = client_sock.recv(1024).decode('utf-8').strip()
             client_info = json.loads(data)
             print(f"   Info: {client_info}")
@@ -309,6 +338,7 @@ class LEDMatrixServer:
                     'socket': client_sock,
                     'info': client_info,
                     'connected_at': time.time(),
+                    'last_ok': time.time(),
                     'frame_count': 0,
                     'mode': restored_mode,  # 每客户端独立主题
                 }
@@ -387,6 +417,7 @@ class LEDMatrixServer:
                                 try:
                                     self._send_frame(client['socket'], frame)
                                     client['frame_count'] += 1
+                                    client['last_ok'] = now
                                 except Exception as e:
                                     print(f"❌ Send to {addr} failed: {e}")
                                     self._remove_client(addr)

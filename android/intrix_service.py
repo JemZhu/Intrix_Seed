@@ -15,9 +15,10 @@ file manager. Set the INTRIX_HOME env var to override.
 
 import os
 import sys
+import threading
 import time
 
-__version__ = "6.17.1"
+__version__ = "6.17.2"
 
 WEB_PORT = int(os.environ.get("INTRIX_WEB_PORT", "5000"))
 TCP_PORT = int(os.environ.get("INTRIX_TCP_PORT", "8080"))
@@ -76,6 +77,40 @@ def _hold(service):
             print("[intrix] wifi lock acquired")
     except Exception as e:
         print("[intrix] wifi lock failed: %r" % (e,))
+    try:
+        from jnius import autoclass as _ac2
+
+        Context = _ac2("android.content.Context")
+        PowerManager = _ac2("android.os.PowerManager")
+        pm = service.getSystemService(Context.POWER_SERVICE)
+        if pm:
+            wl = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+                                 "IntrixSeed::World")
+            wl.setReferenceCounted(False)
+            wl.acquire()
+            print("[intrix] cpu wake lock acquired")
+    except Exception as e:
+        print("[intrix] wake lock failed: %r" % (e,))
+
+
+def _heartbeat():
+    """每 60s 打一行，方便 adb logcat 看服务是不是还活着、IP 变没变。"""
+    import socket as _s
+
+    while True:
+        try:
+            ip = "?"
+            try:
+                st = _s.socket(_s.AF_INET, _s.SOCK_DGRAM)
+                st.connect(("8.8.8.8", 80))
+                ip = st.getsockname()[0]
+                st.close()
+            except Exception:
+                pass
+            print("[intrix] heartbeat wifi_ip=%s" % ip)
+        except Exception:
+            pass
+        time.sleep(60)
 
 
 def main():
@@ -108,6 +143,8 @@ def main():
         print('[intrix] CA bundle: %s' % (netsafe.install(),))
     except Exception as e:
         print('[intrix] netsafe failed: %r' % (e,))
+
+    threading.Thread(target=_heartbeat, daemon=True).start()
 
     import server
 

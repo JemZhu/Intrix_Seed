@@ -22,7 +22,7 @@ source.exclude_dirs = venv,venv_new,logs,preview,client,screenshots,themes_backu
 source.exclude_patterns = *NotoSansCJK*,*wqy-zenhei*,*.bak_*,patch_v*.py,smoke_v*.py,probe_*.py,fetch_pearl*,led_status_updater.py,openclaw_monitor.py,*.bak
 
 # (str) Application versioning (method 1)
-version = 6.17.1
+version = 6.17.2
 
 # (list) Application requirements
 # flask recipe pulls jinja2/werkzeug/click/itsdangerous; flask-cors is pure
