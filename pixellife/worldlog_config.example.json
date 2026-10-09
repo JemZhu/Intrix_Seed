@@ -1,0 +1,6 @@
+{
+ "enabled": true,
+ "max_days": 10000,
+ "news_per_day": 30,
+ "hot_per_day": 20
+}

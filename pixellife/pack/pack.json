@@ -1,0 +1,6514 @@
+{
+ "rooms": {
+  "bedroom": {
+   "floor": "wood_pale",
+   "wall": "amber",
+   "label": "卧室",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Bedroom",
+     "idx": "187",
+     "x": 1,
+     "y": 15,
+     "w": 26,
+     "h": 40
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "233",
+     "x": 33,
+     "y": 31,
+     "w": 29,
+     "h": 24
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "168",
+     "x": 137,
+     "y": 28,
+     "w": 35,
+     "h": 28
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "176",
+     "x": 137,
+     "y": 6,
+     "w": 54,
+     "h": 21
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "194",
+     "x": 137,
+     "y": -14,
+     "w": 63,
+     "h": 19
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "172",
+     "x": 137,
+     "y": -35,
+     "w": 33,
+     "h": 20
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "196",
+     "x": 137,
+     "y": -62,
+     "w": 56,
+     "h": 26
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "190",
+     "x": 139,
+     "y": -103,
+     "w": 26,
+     "h": 40
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "180",
+     "x": 137,
+     "y": -134,
+     "w": 39,
+     "h": 30
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "167",
+     "x": 137,
+     "y": -163,
+     "w": 35,
+     "h": 28
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "173",
+     "x": 137,
+     "y": -184,
+     "w": 33,
+     "h": 20
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 121,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 143,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 141,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "kitchen": {
+   "floor": "tile_blue",
+   "wall": "mint",
+   "label": "厨房",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 1,
+     "y": 27,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "193",
+     "x": 33,
+     "y": 27,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 18,
+     "y": 45,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "166",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 137,
+     "y": 13,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "501",
+     "x": 141,
+     "y": -6,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 137,
+     "y": -21,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "165",
+     "x": 154,
+     "y": -21,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "502",
+     "x": 137,
+     "y": -39,
+     "w": 32,
+     "h": 17
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "168",
+     "x": 137,
+     "y": -54,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "171",
+     "x": 154,
+     "y": -54,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "169",
+     "x": 145,
+     "y": -69,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 141,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 118,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 117,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "study": {
+   "floor": "wood_mid",
+   "wall": "white",
+   "label": "书房",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 1,
+     "y": 15,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 31,
+     "y": 24,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 44,
+     "y": 36,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "90",
+     "x": 137,
+     "y": 32,
+     "w": 37,
+     "h": 24
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "98",
+     "x": 143,
+     "y": 12,
+     "w": 17,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "77",
+     "x": 137,
+     "y": -27,
+     "w": 58,
+     "h": 38
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "71",
+     "x": 144,
+     "y": -47,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "86",
+     "x": 138,
+     "y": -79,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 138,
+     "y": -120,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "91",
+     "x": 143,
+     "y": -151,
+     "w": 17,
+     "h": 30
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "89",
+     "x": 137,
+     "y": -175,
+     "w": 37,
+     "h": 23
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "78",
+     "x": 137,
+     "y": -216,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 123,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 143,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 113,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "gym": {
+   "floor": "beige_plain",
+   "wall": "grey",
+   "label": "健身房",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Gym",
+     "idx": "70",
+     "x": 1,
+     "y": 18,
+     "w": 26,
+     "h": 38
+    },
+    {
+     "theme": "Gym",
+     "idx": "4",
+     "x": 30,
+     "y": 32,
+     "w": 40,
+     "h": 23
+    },
+    {
+     "theme": "Gym",
+     "idx": "81",
+     "x": 20,
+     "y": 19,
+     "w": 20,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "81",
+     "x": 142,
+     "y": 20,
+     "w": 20,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "1",
+     "x": 137,
+     "y": -17,
+     "w": 44,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "58",
+     "x": 143,
+     "y": -36,
+     "w": 18,
+     "h": 18
+    },
+    {
+     "theme": "Gym",
+     "idx": "0",
+     "x": 137,
+     "y": -73,
+     "w": 44,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "80",
+     "x": 145,
+     "y": -87,
+     "w": 14,
+     "h": 13
+    },
+    {
+     "theme": "Gym",
+     "idx": "54",
+     "x": 142,
+     "y": -107,
+     "w": 20,
+     "h": 19
+    },
+    {
+     "theme": "Gym",
+     "idx": "2",
+     "x": 137,
+     "y": -144,
+     "w": 44,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "85",
+     "x": 137,
+     "y": -173,
+     "w": 41,
+     "h": 28
+    },
+    {
+     "theme": "Gym",
+     "idx": "51",
+     "x": 137,
+     "y": -192,
+     "w": 32,
+     "h": 18
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 123,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 110,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 135,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "living": {
+   "floor": "cream_check",
+   "wall": "cream",
+   "label": "客厅",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "_extra",
+     "idx": "living_fire",
+     "x": 20,
+     "y": 20,
+     "w": 40,
+     "h": 34
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_plant",
+     "x": 1,
+     "y": 16,
+     "w": 18,
+     "h": 39
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_sofa",
+     "x": 137,
+     "y": 35,
+     "w": 44,
+     "h": 21
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_bench",
+     "x": 137,
+     "y": 8,
+     "w": 44,
+     "h": 26
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_tv",
+     "x": 137,
+     "y": -35,
+     "w": 61,
+     "h": 42
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_shelf",
+     "x": 137,
+     "y": -70,
+     "w": 34,
+     "h": 34
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_lamp",
+     "x": 143,
+     "y": -115,
+     "w": 18,
+     "h": 44
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_candle",
+     "x": 143,
+     "y": -140,
+     "w": 18,
+     "h": 24
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 79,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 122,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 88,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "bath": {
+   "floor": "tile_flower",
+   "wall": "blue",
+   "label": "浴室",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Bathroom",
+     "idx": "4",
+     "x": 1,
+     "y": 25,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "6",
+     "x": 49,
+     "y": 21,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "13",
+     "x": 30,
+     "y": 37,
+     "w": 20,
+     "h": 18
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "0",
+     "x": 137,
+     "y": 38,
+     "w": 32,
+     "h": 18
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "251",
+     "x": 138,
+     "y": 8,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "12",
+     "x": 142,
+     "y": -9,
+     "w": 20,
+     "h": 16
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "7",
+     "x": 145,
+     "y": -44,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "11",
+     "x": 142,
+     "y": -74,
+     "w": 20,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "5",
+     "x": 145,
+     "y": -109,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "250",
+     "x": 138,
+     "y": -139,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "252",
+     "x": 138,
+     "y": -169,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "6",
+     "x": 145,
+     "y": -204,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 137,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 121,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 125,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "office": {
+   "floor": "beige_soft",
+   "wall": "grey",
+   "label": "公司",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 3,
+     "y": 26,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 34,
+     "y": 22,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 48,
+     "y": 13,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "97",
+     "x": 138,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "89",
+     "x": 137,
+     "y": 1,
+     "w": 37,
+     "h": 23
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "93",
+     "x": 137,
+     "y": -40,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "78",
+     "x": 137,
+     "y": -81,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "77",
+     "x": 137,
+     "y": -120,
+     "w": 58,
+     "h": 38
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "96",
+     "x": 138,
+     "y": -152,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "87",
+     "x": 138,
+     "y": -184,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "3",
+     "x": 143,
+     "y": -216,
+     "w": 18,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "85",
+     "x": 138,
+     "y": -248,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 90,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 84,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 114,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "shop": {
+   "floor": "cream_grid",
+   "wall": "beige",
+   "label": "商店",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 1,
+     "y": 19,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "515",
+     "x": 22,
+     "y": 35,
+     "w": 64,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 40,
+     "y": 32,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 32,
+     "y": 46,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Generic",
+     "idx": "621",
+     "x": 137,
+     "y": 36,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "513",
+     "x": 137,
+     "y": -2,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "638",
+     "x": 137,
+     "y": -24,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "512",
+     "x": 153,
+     "y": -40,
+     "w": 16,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "637",
+     "x": 145,
+     "y": -62,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "618",
+     "x": 137,
+     "y": -76,
+     "w": 32,
+     "h": 13
+    },
+    {
+     "theme": "Generic",
+     "idx": "630",
+     "x": 137,
+     "y": -91,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 154,
+     "y": -98,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "634",
+     "x": 145,
+     "y": -120,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 93,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 92,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 84,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "outdoor": {
+   "floor": "beige_soft",
+   "wall": "blue",
+   "label": "公园",
+   "scene": "park",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    34,
+    74
+   ],
+   "props": [
+    {
+     "theme": "cleancity",
+     "idx": "fountain",
+     "x": 78,
+     "y": 22,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 81,
+     "y": 50,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 127,
+     "y": 26,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 126,
+     "y": 18,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 131,
+     "y": 32,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 9,
+     "y": 18,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 14,
+     "y": 26,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 23,
+     "y": 50,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 135,
+     "y": 50,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 133,
+     "y": 26,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "bush",
+     "x": 145,
+     "y": 18,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Fishing",
+     "idx": "239",
+     "x": 16,
+     "y": 26,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "Fishing",
+     "idx": "244",
+     "x": 50,
+     "y": 52,
+     "w": 24,
+     "h": 23
+    }
+   ]
+  },
+  "beach": {
+   "floor": "beige_soft",
+   "wall": "blue",
+   "label": "海边",
+   "scene": "beach",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    34,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Fishing",
+     "idx": "239",
+     "x": 14,
+     "y": 14,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "Fishing",
+     "idx": "244",
+     "x": 48,
+     "y": 40,
+     "w": 24,
+     "h": 23
+    },
+    {
+     "theme": "Fishing",
+     "idx": "245",
+     "x": 4,
+     "y": 46,
+     "w": 20,
+     "h": 16
+    },
+    {
+     "theme": "Fishing",
+     "idx": "239b",
+     "x": 108,
+     "y": 20,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "_extra",
+     "idx": "palm",
+     "x": 58,
+     "y": 30,
+     "w": 18,
+     "h": 39
+    },
+    {
+     "theme": "_extra",
+     "idx": "palm",
+     "x": 150,
+     "y": 30,
+     "w": 18,
+     "h": 39
+    }
+   ]
+  },
+  "music": {
+   "floor": "herring_dark",
+   "wall": "amber",
+   "label": "琴房",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Music_and_sport",
+     "idx": "49",
+     "x": 26,
+     "y": 25,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "1",
+     "x": 2,
+     "y": 24,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "13",
+     "x": 50,
+     "y": 30,
+     "w": 29,
+     "h": 23
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "104",
+     "x": 137,
+     "y": 41,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "67",
+     "x": 153,
+     "y": 29,
+     "w": 13,
+     "h": 27
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "97",
+     "x": 143,
+     "y": 9,
+     "w": 18,
+     "h": 19
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "74",
+     "x": 137,
+     "y": -23,
+     "w": 15,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "69",
+     "x": 155,
+     "y": -19,
+     "w": 15,
+     "h": 27
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "81",
+     "x": 143,
+     "y": -43,
+     "w": 18,
+     "h": 19
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "100",
+     "x": 137,
+     "y": -59,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "73",
+     "x": 153,
+     "y": -59,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "85",
+     "x": 145,
+     "y": -75,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 80,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 130,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 128,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "gallery": {
+   "floor": "beige_plain",
+   "wall": "white",
+   "label": "画廊",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Art",
+     "idx": "11",
+     "x": 20,
+     "y": 27,
+     "w": 42,
+     "h": 28
+    },
+    {
+     "theme": "Art",
+     "idx": "36",
+     "x": 4,
+     "y": 24,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "39",
+     "x": 44,
+     "y": 24,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "26",
+     "x": 144,
+     "y": 40,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "39",
+     "x": 142,
+     "y": 10,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "11",
+     "x": 137,
+     "y": -19,
+     "w": 42,
+     "h": 28
+    },
+    {
+     "theme": "Art",
+     "idx": "32",
+     "x": 137,
+     "y": -35,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "16",
+     "x": 153,
+     "y": -32,
+     "w": 12,
+     "h": 12
+    },
+    {
+     "theme": "Art",
+     "idx": "28",
+     "x": 137,
+     "y": -52,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "14",
+     "x": 155,
+     "y": -53,
+     "w": 13,
+     "h": 17
+    },
+    {
+     "theme": "Art",
+     "idx": "2",
+     "x": 137,
+     "y": -69,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "18",
+     "x": 153,
+     "y": -66,
+     "w": 12,
+     "h": 12
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 93,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 96,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 103,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "party": {
+   "floor": "pink_square",
+   "wall": "cream",
+   "label": "派对房",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Birthday_party",
+     "idx": "11",
+     "x": 20,
+     "y": 20,
+     "w": 25,
+     "h": 13
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "1",
+     "x": 26,
+     "y": 36,
+     "w": 19,
+     "h": 20
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "2",
+     "x": 2,
+     "y": 24,
+     "w": 19,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "4",
+     "x": 50,
+     "y": 24,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "24",
+     "x": 146,
+     "y": 42,
+     "w": 12,
+     "h": 14
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "3",
+     "x": 142,
+     "y": 25,
+     "w": 19,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "14",
+     "x": 144,
+     "y": 8,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "11",
+     "x": 139,
+     "y": -6,
+     "w": 25,
+     "h": 13
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "26",
+     "x": 137,
+     "y": -21,
+     "w": 12,
+     "h": 14
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "4",
+     "x": 152,
+     "y": -23,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "1",
+     "x": 142,
+     "y": -44,
+     "w": 19,
+     "h": 20
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "20",
+     "x": 137,
+     "y": -57,
+     "w": 15,
+     "h": 12
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "0",
+     "x": 155,
+     "y": -61,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 133,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 93,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 142,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "spooky": {
+   "floor": "brick_deep",
+   "wall": "grey",
+   "label": "怪趣屋",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Halloween",
+     "idx": "541",
+     "x": 2,
+     "y": 9,
+     "w": 30,
+     "h": 47
+    },
+    {
+     "theme": "Halloween",
+     "idx": "542",
+     "x": 34,
+     "y": 9,
+     "w": 30,
+     "h": 47
+    },
+    {
+     "theme": "Halloween",
+     "idx": "517",
+     "x": 24,
+     "y": 27,
+     "w": 30,
+     "h": 29
+    },
+    {
+     "theme": "Halloween",
+     "idx": "11",
+     "x": 137,
+     "y": 40,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Halloween",
+     "idx": "17",
+     "x": 155,
+     "y": 43,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "Halloween",
+     "idx": "513",
+     "x": 137,
+     "y": 26,
+     "w": 30,
+     "h": 13
+    },
+    {
+     "theme": "Halloween",
+     "idx": "9",
+     "x": 139,
+     "y": 3,
+     "w": 26,
+     "h": 22
+    },
+    {
+     "theme": "Halloween",
+     "idx": "272",
+     "x": 145,
+     "y": -12,
+     "w": 13,
+     "h": 14
+    },
+    {
+     "theme": "Halloween",
+     "idx": "18",
+     "x": 137,
+     "y": -29,
+     "w": 32,
+     "h": 16
+    },
+    {
+     "theme": "Halloween",
+     "idx": "692",
+     "x": 138,
+     "y": -70,
+     "w": 28,
+     "h": 40
+    },
+    {
+     "theme": "Halloween",
+     "idx": "280",
+     "x": 143,
+     "y": -88,
+     "w": 18,
+     "h": 17
+    },
+    {
+     "theme": "Halloween",
+     "idx": "279",
+     "x": 143,
+     "y": -106,
+     "w": 18,
+     "h": 17
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 77,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 100,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 81,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "clinic": {
+   "floor": "cream_line",
+   "wall": "white",
+   "label": "诊所",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "620",
+     "x": 2,
+     "y": 12,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "621",
+     "x": 34,
+     "y": 12,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 44,
+     "y": 16,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "634",
+     "x": 137,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "629",
+     "x": 153,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "622",
+     "x": 137,
+     "y": 14,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 145,
+     "y": -8,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 137,
+     "y": -46,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "618",
+     "x": 137,
+     "y": -60,
+     "w": 32,
+     "h": 13
+    },
+    {
+     "theme": "Generic",
+     "idx": "619",
+     "x": 137,
+     "y": -74,
+     "w": 32,
+     "h": 13
+    },
+    {
+     "theme": "Generic",
+     "idx": "627",
+     "x": 137,
+     "y": -89,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "633",
+     "x": 154,
+     "y": -96,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 133,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 106,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 74,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "cafe": {
+   "floor": "wood_tone",
+   "wall": "cream",
+   "label": "咖啡馆",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 2,
+     "y": 30,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "193",
+     "x": 32,
+     "y": 24,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 50,
+     "y": 36,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "166",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "501",
+     "x": 141,
+     "y": 23,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "171",
+     "x": 137,
+     "y": 8,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "173",
+     "x": 154,
+     "y": 1,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "174",
+     "x": 137,
+     "y": -21,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "169",
+     "x": 153,
+     "y": -14,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "503",
+     "x": 140,
+     "y": -50,
+     "w": 23,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 137,
+     "y": -65,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "168",
+     "x": 154,
+     "y": -65,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 88,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 105,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 80,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "library": {
+   "floor": "wood_band",
+   "wall": "beige",
+   "label": "图书馆",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 1,
+     "y": 12,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 30,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 46,
+     "y": 34,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "96",
+     "x": 138,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "0",
+     "x": 146,
+     "y": 4,
+     "w": 12,
+     "h": 20
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "94",
+     "x": 138,
+     "y": -37,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "80",
+     "x": 138,
+     "y": -78,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "98",
+     "x": 143,
+     "y": -98,
+     "w": 17,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "90",
+     "x": 137,
+     "y": -123,
+     "w": 37,
+     "h": 24
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 144,
+     "y": -143,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "74",
+     "x": 141,
+     "y": -182,
+     "w": 22,
+     "h": 38
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "89",
+     "x": 137,
+     "y": -206,
+     "w": 37,
+     "h": 23
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 134,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 115,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 98,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "classroom": {
+   "floor": "cream_grid",
+   "wall": "white",
+   "label": "教室",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 4,
+     "y": 30,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 28,
+     "y": 12,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 48,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "89",
+     "x": 137,
+     "y": 33,
+     "w": 37,
+     "h": 23
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "88",
+     "x": 137,
+     "y": 11,
+     "w": 37,
+     "h": 21
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "0",
+     "x": 137,
+     "y": -10,
+     "w": 12,
+     "h": 20
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "91",
+     "x": 152,
+     "y": -20,
+     "w": 17,
+     "h": 30
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 144,
+     "y": -40,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "29",
+     "x": 137,
+     "y": -64,
+     "w": 32,
+     "h": 23
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "1",
+     "x": 137,
+     "y": -90,
+     "w": 57,
+     "h": 25
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "79",
+     "x": 137,
+     "y": -131,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "85",
+     "x": 138,
+     "y": -163,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 76,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 119,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 114,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "subway": {
+   "floor": "tile_blue",
+   "wall": "grey",
+   "label": "地铁站",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 2,
+     "y": 19,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "515",
+     "x": 30,
+     "y": 34,
+     "w": 64,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 48,
+     "y": 30,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "635",
+     "x": 137,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "625",
+     "x": 153,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 137,
+     "y": -3,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "515",
+     "x": 137,
+     "y": -25,
+     "w": 64,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "629",
+     "x": 137,
+     "y": -40,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "514",
+     "x": 154,
+     "y": -63,
+     "w": 16,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "634",
+     "x": 137,
+     "y": -85,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "631",
+     "x": 153,
+     "y": -78,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "620",
+     "x": 137,
+     "y": -106,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 127,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 133,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 121,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "cinema": {
+   "floor": "brick_deep",
+   "wall": "grey",
+   "label": "影院",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "620",
+     "x": 2,
+     "y": 22,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "621",
+     "x": 30,
+     "y": 22,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 50,
+     "y": 32,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "514",
+     "x": 137,
+     "y": 19,
+     "w": 16,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "636",
+     "x": 156,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "626",
+     "x": 145,
+     "y": 4,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "620",
+     "x": 137,
+     "y": -17,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "634",
+     "x": 137,
+     "y": -39,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "639",
+     "x": 153,
+     "y": -39,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "625",
+     "x": 137,
+     "y": -54,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "635",
+     "x": 154,
+     "y": -61,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 137,
+     "y": -99,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 105,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 81,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 122,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "bank": {
+   "floor": "cream_line",
+   "wall": "white",
+   "label": "银行",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "620",
+     "x": 2,
+     "y": 20,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "621",
+     "x": 30,
+     "y": 20,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 48,
+     "y": 26,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "630",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 137,
+     "y": 4,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 145,
+     "y": -18,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "622",
+     "x": 137,
+     "y": -39,
+     "w": 32,
+     "h": 20
+    },
+    {
+     "theme": "Generic",
+     "idx": "631",
+     "x": 137,
+     "y": -54,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 154,
+     "y": -54,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "627",
+     "x": 137,
+     "y": -69,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "636",
+     "x": 154,
+     "y": -76,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "514",
+     "x": 144,
+     "y": -114,
+     "w": 16,
+     "h": 37
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 137,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 80,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 82,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "market": {
+   "floor": "cream_check",
+   "wall": "mint",
+   "label": "超市",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 2,
+     "y": 28,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 26,
+     "y": 40,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "193",
+     "x": 44,
+     "y": 26,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "166",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "500",
+     "x": 141,
+     "y": 23,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "167",
+     "x": 137,
+     "y": 8,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "172",
+     "x": 154,
+     "y": 1,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 137,
+     "y": -28,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "169",
+     "x": 137,
+     "y": -43,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "173",
+     "x": 154,
+     "y": -50,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 137,
+     "y": -65,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "165",
+     "x": 154,
+     "y": -65,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 112,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 124,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 104,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "arcade": {
+   "floor": "brick_warm",
+   "wall": "grey",
+   "label": "电玩城",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 2,
+     "y": 19,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "515",
+     "x": 28,
+     "y": 34,
+     "w": 64,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 46,
+     "y": 32,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "639",
+     "x": 137,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 153,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "630",
+     "x": 137,
+     "y": 20,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "631",
+     "x": 154,
+     "y": 20,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "638",
+     "x": 137,
+     "y": -2,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 153,
+     "y": 5,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Generic",
+     "idx": "637",
+     "x": 137,
+     "y": -24,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "634",
+     "x": 153,
+     "y": -24,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Generic",
+     "idx": "633",
+     "x": 145,
+     "y": -46,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 87,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 118,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 136,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "bar": {
+   "floor": "herring_dark",
+   "wall": "amber",
+   "label": "酒吧",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "193",
+     "x": 2,
+     "y": 22,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 26,
+     "y": 38,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Generic",
+     "idx": "632",
+     "x": 48,
+     "y": 28,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "171",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "503",
+     "x": 140,
+     "y": 13,
+     "w": 23,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 137,
+     "y": -16,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "168",
+     "x": 137,
+     "y": -31,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "166",
+     "x": 154,
+     "y": -31,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "169",
+     "x": 137,
+     "y": -46,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "173",
+     "x": 154,
+     "y": -53,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "167",
+     "x": 137,
+     "y": -68,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "172",
+     "x": 154,
+     "y": -75,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 116,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 77,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 139,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ]
+  },
+  "pool": {
+   "floor": "tile_blue",
+   "wall": "blue",
+   "label": "游泳馆",
+   "scene": "pool",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    40,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Bathroom",
+     "idx": "4",
+     "x": 2,
+     "y": 8,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "6",
+     "x": 44,
+     "y": 8,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "13",
+     "x": 28,
+     "y": 14,
+     "w": 20,
+     "h": 18
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "250",
+     "x": 6,
+     "y": 1,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "12",
+     "x": 10,
+     "y": -16,
+     "w": 20,
+     "h": 16
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "251",
+     "x": 6,
+     "y": -46,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "11",
+     "x": 10,
+     "y": -76,
+     "w": 20,
+     "h": 29
+    },
+    {
+     "theme": "inter16",
+     "idx": "lounger",
+     "x": 52,
+     "y": 64,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "lounger",
+     "x": 84,
+     "y": 64,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "lounger",
+     "x": 116,
+     "y": 64,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "lounger",
+     "x": 145,
+     "y": 64,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "plant",
+     "x": 8,
+     "y": 64,
+     "w": 12,
+     "h": 13
+    }
+   ]
+  },
+  "rooftop": {
+   "floor": "brick_red",
+   "wall": "blue",
+   "label": "天台",
+   "scene": "rooftop",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    50,
+    74
+   ],
+   "props": [
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 4,
+     "y": 39,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Generic",
+     "idx": "515",
+     "x": 30,
+     "y": 52,
+     "w": 64,
+     "h": 21
+    },
+    {
+     "theme": "inter16",
+     "idx": "plant",
+     "x": 72,
+     "y": 44,
+     "w": 15,
+     "h": 22
+    },
+    {
+     "theme": "inter16",
+     "idx": "plant",
+     "x": 120,
+     "y": 44,
+     "w": 15,
+     "h": 22
+    },
+    {
+     "theme": "inter16",
+     "idx": "plant",
+     "x": 156,
+     "y": 44,
+     "w": 15,
+     "h": 22
+    },
+    {
+     "theme": "inter16",
+     "idx": "bench",
+     "x": 96,
+     "y": 62,
+     "w": 31,
+     "h": 13
+    }
+   ]
+  },
+  "garden": {
+   "floor": "beige_soft",
+   "wall": "blue",
+   "label": "花园",
+   "scene": "garden",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    34,
+    76
+   ],
+   "props": [
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 28,
+     "y": 66,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 133,
+     "y": 30,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 10,
+     "y": 30,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 129,
+     "y": 42,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 151,
+     "y": 42,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 24,
+     "y": 66,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 44,
+     "y": 30,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 44,
+     "y": 30,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 129,
+     "y": 42,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "cleancity",
+     "idx": "flora",
+     "x": 45,
+     "y": 30,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Fishing",
+     "idx": "239",
+     "x": 14,
+     "y": 30,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "Fishing",
+     "idx": "244",
+     "x": 48,
+     "y": 53,
+     "w": 24,
+     "h": 23
+    },
+    {
+     "theme": "inter16",
+     "idx": "pot",
+     "x": 30,
+     "y": 63,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "pot",
+     "x": 138,
+     "y": 63,
+     "w": 12,
+     "h": 13
+    }
+   ]
+  },
+  "home_chef_alex": {
+   "floor": "beige_plain",
+   "wall": "grey",
+   "label": "袁望舒家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 2,
+     "y": 26,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 28,
+     "y": 19,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Gym",
+     "idx": "70",
+     "x": 30,
+     "y": 18,
+     "w": 26,
+     "h": 38
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "170",
+     "x": 145,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "500",
+     "x": 141,
+     "y": 23,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 137,
+     "y": 8,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "175",
+     "x": 154,
+     "y": 1,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "167",
+     "x": 137,
+     "y": -14,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "174",
+     "x": 154,
+     "y": -21,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "165",
+     "x": 145,
+     "y": -36,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "503",
+     "x": 140,
+     "y": -65,
+     "w": 23,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "166",
+     "x": 145,
+     "y": -80,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 75,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 77,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 143,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Chef_Alex",
+   "note": "小区保安 ISTP / 做饭·烘焙·露营",
+   "family": "C"
+  },
+  "home_chef_pier": {
+   "floor": "cream_grid",
+   "wall": "cream",
+   "label": "彭柔嘉家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Music_and_sport",
+     "idx": "49",
+     "x": 4,
+     "y": 25,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "1",
+     "x": 40,
+     "y": 24,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 52,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "62",
+     "x": 141,
+     "y": 38,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "87",
+     "x": 144,
+     "y": 6,
+     "w": 15,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "15",
+     "x": 137,
+     "y": -18,
+     "w": 29,
+     "h": 23
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "96",
+     "x": 137,
+     "y": -40,
+     "w": 14,
+     "h": 21
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "58",
+     "x": 154,
+     "y": -35,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "71",
+     "x": 141,
+     "y": -54,
+     "w": 21,
+     "h": 13
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "90",
+     "x": 141,
+     "y": -84,
+     "w": 22,
+     "h": 29
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "92",
+     "x": 146,
+     "y": -97,
+     "w": 12,
+     "h": 12
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "49",
+     "x": 137,
+     "y": -129,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 83,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 118,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 112,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Chef_Pier",
+   "note": "厨师 ISFJ / 健身·音乐·阅读",
+   "family": "B"
+  },
+  "home_chef_rob": {
+   "floor": "pink_square",
+   "wall": "cream",
+   "label": "郑可儿家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Birthday_party",
+     "idx": "1",
+     "x": 26,
+     "y": 36,
+     "w": 19,
+     "h": 20
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "2",
+     "x": 2,
+     "y": 24,
+     "w": 19,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "11",
+     "x": 20,
+     "y": 8,
+     "w": 25,
+     "h": 13
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "26",
+     "x": 146,
+     "y": 42,
+     "w": 12,
+     "h": 14
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "1",
+     "x": 142,
+     "y": 21,
+     "w": 19,
+     "h": 20
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "3",
+     "x": 142,
+     "y": 4,
+     "w": 19,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "0",
+     "x": 137,
+     "y": -13,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "4",
+     "x": 155,
+     "y": -13,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "14",
+     "x": 137,
+     "y": -30,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "17",
+     "x": 155,
+     "y": -30,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "11",
+     "x": 139,
+     "y": -44,
+     "w": 25,
+     "h": 13
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "24",
+     "x": 146,
+     "y": -59,
+     "w": 12,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 85,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 75,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 99,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Chef_Rob",
+   "note": "大学生 ISFP / 电影·烘焙·旅行",
+   "family": "C"
+  },
+  "home_dan": {
+   "floor": "herring_dark",
+   "wall": "amber",
+   "label": "朱柔嘉家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "193",
+     "x": 2,
+     "y": 22,
+     "w": 16,
+     "h": 16
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 26,
+     "y": 40,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "4",
+     "x": 2,
+     "y": 8,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "173",
+     "x": 137,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "170",
+     "x": 153,
+     "y": 42,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 137,
+     "y": 20,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "168",
+     "x": 154,
+     "y": 20,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "500",
+     "x": 141,
+     "y": 1,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "172",
+     "x": 137,
+     "y": -21,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "167",
+     "x": 153,
+     "y": -14,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "174",
+     "x": 145,
+     "y": -43,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "501",
+     "x": 141,
+     "y": -62,
+     "w": 21,
+     "h": 18
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 132,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 107,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 111,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Dan",
+   "note": "调酒师 INTJ 夜猫 / 骑行·露营·游泳",
+   "family": "A"
+  },
+  "home_halloween_kid_1": {
+   "floor": "beige_soft",
+   "wall": "mint",
+   "label": "陈青野家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Fishing",
+     "idx": "239",
+     "x": 2,
+     "y": 10,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "Fishing",
+     "idx": "244",
+     "x": 40,
+     "y": 33,
+     "w": 24,
+     "h": 23
+    },
+    {
+     "theme": "Generic",
+     "idx": "511",
+     "x": 36,
+     "y": 8,
+     "w": 38,
+     "h": 37
+    },
+    {
+     "theme": "Fishing",
+     "idx": "0",
+     "x": 137,
+     "y": 41,
+     "w": 32,
+     "h": 15
+    },
+    {
+     "theme": "Fishing",
+     "idx": "245",
+     "x": 142,
+     "y": 24,
+     "w": 20,
+     "h": 16
+    },
+    {
+     "theme": "Fishing",
+     "idx": "246",
+     "x": 142,
+     "y": 7,
+     "w": 20,
+     "h": 16
+    },
+    {
+     "theme": "Fishing",
+     "idx": "1",
+     "x": 144,
+     "y": -9,
+     "w": 16,
+     "h": 15
+    },
+    {
+     "theme": "Fishing",
+     "idx": "244",
+     "x": 140,
+     "y": -33,
+     "w": 24,
+     "h": 23
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 143,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 137,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 112,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Halloween_Kid_1",
+   "note": "小学生 ISTJ / 钓鱼·旅行·遛狗",
+   "family": "C"
+  },
+  "home_halloween_kid_2": {
+   "floor": "cream_line",
+   "wall": "blue",
+   "label": "程子萱家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Art",
+     "idx": "11",
+     "x": 2,
+     "y": 27,
+     "w": 42,
+     "h": 28
+    },
+    {
+     "theme": "Art",
+     "idx": "39",
+     "x": 36,
+     "y": 22,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "187",
+     "x": 34,
+     "y": 8,
+     "w": 26,
+     "h": 40
+    },
+    {
+     "theme": "Art",
+     "idx": "31",
+     "x": 137,
+     "y": 41,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "0",
+     "x": 153,
+     "y": 35,
+     "w": 14,
+     "h": 21
+    },
+    {
+     "theme": "Art",
+     "idx": "40",
+     "x": 142,
+     "y": 5,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "22",
+     "x": 137,
+     "y": -11,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "24",
+     "x": 153,
+     "y": -12,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "9",
+     "x": 145,
+     "y": -27,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Art",
+     "idx": "43",
+     "x": 142,
+     "y": -57,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "2",
+     "x": 145,
+     "y": -73,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "11",
+     "x": 137,
+     "y": -102,
+     "w": 42,
+     "h": 28
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 87,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 110,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 124,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Halloween_Kid_2",
+   "note": "初中生 INTJ / 露营·画画·遛狗",
+   "family": "C"
+  },
+  "home_lucy": {
+   "floor": "wood_mid",
+   "wall": "white",
+   "label": "朱望舒家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 2,
+     "y": 26,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 40,
+     "y": 13,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Bedroom",
+     "idx": "187",
+     "x": 2,
+     "y": 8,
+     "w": 26,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "74",
+     "x": 141,
+     "y": 18,
+     "w": 22,
+     "h": 38
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "28",
+     "x": 145,
+     "y": -4,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "87",
+     "x": 138,
+     "y": -36,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "3",
+     "x": 143,
+     "y": -68,
+     "w": 18,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 138,
+     "y": -109,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "30",
+     "x": 137,
+     "y": -135,
+     "w": 32,
+     "h": 25
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "95",
+     "x": 138,
+     "y": -176,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "31",
+     "x": 146,
+     "y": -197,
+     "w": 12,
+     "h": 20
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "90",
+     "x": 137,
+     "y": -222,
+     "w": 37,
+     "h": 24
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 127,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 123,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 111,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Lucy",
+   "note": "程序员 ISTP 夜猫 / 电影·露营·摄影",
+   "family": "A"
+  },
+  "home_molly": {
+   "floor": "wood_pale",
+   "wall": "mint",
+   "label": "田怀安家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 2,
+     "y": 28,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 30,
+     "y": 42,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Gym",
+     "idx": "4",
+     "x": 30,
+     "y": 8,
+     "w": 40,
+     "h": 23
+    },
+    {
+     "theme": "Gym",
+     "idx": "84",
+     "x": 142,
+     "y": 20,
+     "w": 19,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "53",
+     "x": 142,
+     "y": 0,
+     "w": 20,
+     "h": 19
+    },
+    {
+     "theme": "Gym",
+     "idx": "82",
+     "x": 142,
+     "y": -37,
+     "w": 20,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "51",
+     "x": 137,
+     "y": -56,
+     "w": 32,
+     "h": 18
+    },
+    {
+     "theme": "Gym",
+     "idx": "77",
+     "x": 146,
+     "y": -79,
+     "w": 12,
+     "h": 22
+    },
+    {
+     "theme": "Gym",
+     "idx": "1",
+     "x": 137,
+     "y": -116,
+     "w": 44,
+     "h": 36
+    },
+    {
+     "theme": "Gym",
+     "idx": "85",
+     "x": 137,
+     "y": -145,
+     "w": 41,
+     "h": 28
+    },
+    {
+     "theme": "Gym",
+     "idx": "86",
+     "x": 137,
+     "y": -184,
+     "w": 41,
+     "h": 38
+    },
+    {
+     "theme": "Gym",
+     "idx": "4",
+     "x": 137,
+     "y": -208,
+     "w": 40,
+     "h": 23
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 97,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 79,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 100,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Molly",
+   "note": "程序员 ESFP / 拳击·烘焙·游戏",
+   "family": "B"
+  },
+  "home_old_1": {
+   "floor": "beige_stripe",
+   "wall": "cream",
+   "label": "张可儿家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Art",
+     "idx": "36",
+     "x": 2,
+     "y": 24,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_shelf",
+     "x": 36,
+     "y": 22,
+     "w": 34,
+     "h": 34
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_plant",
+     "x": 54,
+     "y": 17,
+     "w": 18,
+     "h": 39
+    },
+    {
+     "theme": "Art",
+     "idx": "2",
+     "x": 145,
+     "y": 41,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "42",
+     "x": 142,
+     "y": 11,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "31",
+     "x": 137,
+     "y": -5,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "15",
+     "x": 153,
+     "y": -7,
+     "w": 13,
+     "h": 17
+    },
+    {
+     "theme": "Art",
+     "idx": "23",
+     "x": 137,
+     "y": -32,
+     "w": 12,
+     "h": 24
+    },
+    {
+     "theme": "Art",
+     "idx": "8",
+     "x": 152,
+     "y": -22,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Art",
+     "idx": "12",
+     "x": 141,
+     "y": -51,
+     "w": 22,
+     "h": 18
+    },
+    {
+     "theme": "Art",
+     "idx": "20",
+     "x": 137,
+     "y": -64,
+     "w": 12,
+     "h": 12
+    },
+    {
+     "theme": "Art",
+     "idx": "1",
+     "x": 152,
+     "y": -67,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 127,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 88,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 84,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Old_1",
+   "note": "花店老板 INFJ / 做饭·画画·装修",
+   "family": "C"
+  },
+  "home_old_2": {
+   "floor": "wood_tone",
+   "wall": "amber",
+   "label": "任志远家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "_extra",
+     "idx": "living_sofa",
+     "x": 2,
+     "y": 24,
+     "w": 44,
+     "h": 21
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_tv",
+     "x": 2,
+     "y": 8,
+     "w": 61,
+     "h": 42
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_fire",
+     "x": 44,
+     "y": 22,
+     "w": 40,
+     "h": 34
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_sofa",
+     "x": 137,
+     "y": 35,
+     "w": 44,
+     "h": 21
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_bench",
+     "x": 137,
+     "y": 8,
+     "w": 44,
+     "h": 26
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_tv",
+     "x": 137,
+     "y": -35,
+     "w": 61,
+     "h": 42
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_shelf",
+     "x": 137,
+     "y": -70,
+     "w": 34,
+     "h": 34
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_lamp",
+     "x": 143,
+     "y": -115,
+     "w": 18,
+     "h": 44
+    },
+    {
+     "theme": "_extra",
+     "idx": "living_candle",
+     "x": 143,
+     "y": -140,
+     "w": 18,
+     "h": 24
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 76,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 138,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 94,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Old_2",
+   "note": "插画师 ENTP 工作狂 / 炒股·追剧·手工",
+   "family": "A"
+  },
+  "home_old_3": {
+   "floor": "wood_mid",
+   "wall": "white",
+   "label": "徐子轩家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Classroom_and_library",
+     "idx": "69",
+     "x": 2,
+     "y": 26,
+     "w": 16,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 40,
+     "y": 13,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "84",
+     "x": 50,
+     "y": 25,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "90",
+     "x": 137,
+     "y": 32,
+     "w": 37,
+     "h": 24
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "85",
+     "x": 138,
+     "y": 0,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "79",
+     "x": 137,
+     "y": -41,
+     "w": 48,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "28",
+     "x": 145,
+     "y": -63,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "88",
+     "x": 137,
+     "y": -85,
+     "w": 37,
+     "h": 21
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "83",
+     "x": 138,
+     "y": -126,
+     "w": 27,
+     "h": 40
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "98",
+     "x": 143,
+     "y": -146,
+     "w": 17,
+     "h": 19
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "73",
+     "x": 137,
+     "y": -185,
+     "w": 64,
+     "h": 38
+    },
+    {
+     "theme": "Classroom_and_library",
+     "idx": "96",
+     "x": 138,
+     "y": -217,
+     "w": 27,
+     "h": 31
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 94,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 99,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 138,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Old_3",
+   "note": "编剧 ISTJ 夜猫 / 旅行·摄影·桌游",
+   "family": "A"
+  },
+  "home_old_4": {
+   "floor": "cream_check",
+   "wall": "beige",
+   "label": "韩子轩家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Music_and_sport",
+     "idx": "49",
+     "x": 4,
+     "y": 25,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "Birthday_party",
+     "idx": "11",
+     "x": 24,
+     "y": 8,
+     "w": 25,
+     "h": 13
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "13",
+     "x": 52,
+     "y": 34,
+     "w": 20,
+     "h": 18
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "88",
+     "x": 137,
+     "y": 27,
+     "w": 15,
+     "h": 29
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "66",
+     "x": 155,
+     "y": 38,
+     "w": 12,
+     "h": 18
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "50",
+     "x": 137,
+     "y": -5,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "99",
+     "x": 137,
+     "y": -21,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "82",
+     "x": 153,
+     "y": -31,
+     "w": 15,
+     "h": 25
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "67",
+     "x": 145,
+     "y": -59,
+     "w": 13,
+     "h": 27
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "72",
+     "x": 137,
+     "y": -91,
+     "w": 42,
+     "h": 31
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "101",
+     "x": 137,
+     "y": -107,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Music_and_sport",
+     "idx": "84",
+     "x": 153,
+     "y": -107,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 139,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 135,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 97,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Old_4",
+   "note": "花店老板 ENFJ / 音乐·游戏·旅行",
+   "family": "C"
+  },
+  "home_old_5": {
+   "floor": "tile_blue",
+   "wall": "grey",
+   "label": "杜俊杰家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Bathroom",
+     "idx": "4",
+     "x": 2,
+     "y": 26,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "6",
+     "x": 40,
+     "y": 22,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Generic",
+     "idx": "624",
+     "x": 30,
+     "y": 40,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "13",
+     "x": 142,
+     "y": 38,
+     "w": 20,
+     "h": 18
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "0",
+     "x": 137,
+     "y": 19,
+     "w": 32,
+     "h": 18
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "249",
+     "x": 137,
+     "y": -8,
+     "w": 61,
+     "h": 26
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "7",
+     "x": 145,
+     "y": -43,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "250",
+     "x": 138,
+     "y": -73,
+     "w": 28,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "11",
+     "x": 142,
+     "y": -103,
+     "w": 20,
+     "h": 29
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "4",
+     "x": 137,
+     "y": -134,
+     "w": 48,
+     "h": 30
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "5",
+     "x": 137,
+     "y": -169,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "Bathroom",
+     "idx": "6",
+     "x": 154,
+     "y": -169,
+     "w": 14,
+     "h": 34
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 80,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 106,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 105,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Old_5",
+   "note": "超市店长 INTP / 手工·游泳·追剧",
+   "family": "B"
+  },
+  "home_rob": {
+   "floor": "wood_band",
+   "wall": "beige",
+   "label": "陈书瑶家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Art",
+     "idx": "11",
+     "x": 2,
+     "y": 27,
+     "w": 42,
+     "h": 28
+    },
+    {
+     "theme": "Art",
+     "idx": "36",
+     "x": 34,
+     "y": 22,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "39",
+     "x": 52,
+     "y": 24,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "33",
+     "x": 137,
+     "y": 41,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "5",
+     "x": 153,
+     "y": 41,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "36",
+     "x": 142,
+     "y": 11,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "Art",
+     "idx": "4",
+     "x": 137,
+     "y": -5,
+     "w": 13,
+     "h": 15
+    },
+    {
+     "theme": "Art",
+     "idx": "24",
+     "x": 153,
+     "y": -6,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "30",
+     "x": 137,
+     "y": -23,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "14",
+     "x": 155,
+     "y": -24,
+     "w": 13,
+     "h": 17
+    },
+    {
+     "theme": "Art",
+     "idx": "28",
+     "x": 144,
+     "y": -41,
+     "w": 15,
+     "h": 16
+    },
+    {
+     "theme": "Art",
+     "idx": "38",
+     "x": 142,
+     "y": -71,
+     "w": 19,
+     "h": 29
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 103,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 138,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 104,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Rob",
+   "note": "插画师 ISTJ 工作狂 / 桌游·遛狗·音乐",
+   "family": "C"
+  },
+  "home_roki": {
+   "floor": "tile_blue",
+   "wall": "mint",
+   "label": "马文静家",
+   "scene": "indoor",
+   "map_w": 176,
+   "map_h": 80,
+   "walk": [
+    6,
+    170,
+    38,
+    76
+   ],
+   "props": [
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 2,
+     "y": 28,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "180",
+     "x": 30,
+     "y": 44,
+     "w": 27,
+     "h": 10
+    },
+    {
+     "theme": "Fishing",
+     "idx": "239",
+     "x": 28,
+     "y": 8,
+     "w": 40,
+     "h": 46
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "172",
+     "x": 137,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "175",
+     "x": 153,
+     "y": 35,
+     "w": 13,
+     "h": 21
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "176",
+     "x": 137,
+     "y": 6,
+     "w": 32,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "171",
+     "x": 137,
+     "y": -9,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "164",
+     "x": 154,
+     "y": -9,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "503",
+     "x": 140,
+     "y": -38,
+     "w": 23,
+     "h": 28
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "168",
+     "x": 137,
+     "y": -53,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "167",
+     "x": 154,
+     "y": -53,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "Kitchen",
+     "idx": "165",
+     "x": 145,
+     "y": -68,
+     "w": 14,
+     "h": 14
+    },
+    {
+     "theme": "inter16",
+     "idx": "0",
+     "x": 108,
+     "y": 61,
+     "w": 12,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "1",
+     "x": 130,
+     "y": 61,
+     "w": 31,
+     "h": 13
+    },
+    {
+     "theme": "inter16",
+     "idx": "2",
+     "x": 144,
+     "y": 52,
+     "w": 15,
+     "h": 22
+    }
+   ],
+   "home_of": "Roki",
+   "note": "厨师 ISTJ / 阅读·钓鱼·做饭",
+   "family": "B"
+  }
+ },
+ "chars": {
+  "Alex": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Chef_Alex": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Chef_Pier": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Chef_Rob": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Dan": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Halloween_Kid_1": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Halloween_Kid_2": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Lucy": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Molly": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Rob": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Roki": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 24,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Witch": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": [
+    "spooky"
+   ]
+  },
+  "Zombie": {
+   "idle": {
+    "frames": 4,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": [
+    "spooky"
+   ]
+  },
+  "Old_1": {
+   "idle": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Old_2": {
+   "idle": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Old_3": {
+   "idle": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Old_4": {
+   "idle": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  },
+  "Old_5": {
+   "idle": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "idle_anim": {
+    "frames": 1,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "run": {
+    "frames": 6,
+    "frame_w": 16,
+    "frame_h": 32,
+    "mirror_facing": true
+   },
+   "kind": "mi",
+   "fw": 16,
+   "fh": 32,
+   "foot": 31,
+   "tags": []
+  }
+ },
+ "props": {
+  "living_sofa": {
+   "source": "extra",
+   "w": 44,
+   "h": 21
+  },
+  "living_bench": {
+   "source": "extra",
+   "w": 44,
+   "h": 26
+  },
+  "living_fire": {
+   "source": "extra",
+   "w": 40,
+   "h": 34
+  },
+  "living_plant": {
+   "source": "extra",
+   "w": 18,
+   "h": 39
+  },
+  "living_tv": {
+   "source": "extra",
+   "w": 61,
+   "h": 42
+  },
+  "living_shelf": {
+   "source": "extra",
+   "w": 34,
+   "h": 34
+  },
+  "living_lamp": {
+   "source": "extra",
+   "w": 18,
+   "h": 44
+  },
+  "living_candle": {
+   "source": "extra",
+   "w": 18,
+   "h": 24
+  },
+  "i_desk_pc": {
+   "source": "inter16",
+   "w": 31,
+   "h": 24
+  },
+  "i_bed": {
+   "source": "inter16",
+   "w": 28,
+   "h": 41
+  },
+  "i_wardrobe_g": {
+   "source": "inter16",
+   "w": 41,
+   "h": 45
+  },
+  "i_wardrobe_b": {
+   "source": "inter16",
+   "w": 45,
+   "h": 48
+  },
+  "i_win_a": {
+   "source": "inter16",
+   "w": 44,
+   "h": 19
+  },
+  "i_win_b": {
+   "source": "inter16",
+   "w": 28,
+   "h": 19
+  },
+  "i_door": {
+   "source": "inter16",
+   "w": 20,
+   "h": 35
+  },
+  "i_night_lamp": {
+   "source": "inter16",
+   "w": 15,
+   "h": 30
+  },
+  "i_nightstand": {
+   "source": "inter16",
+   "w": 15,
+   "h": 22
+  },
+  "i_locker": {
+   "source": "inter16",
+   "w": 22,
+   "h": 38
+  },
+  "i_radio": {
+   "source": "inter16",
+   "w": 17,
+   "h": 15
+  },
+  "i_drawers": {
+   "source": "inter16",
+   "w": 31,
+   "h": 23
+  },
+  "i_bench": {
+   "source": "inter16",
+   "w": 31,
+   "h": 13
+  },
+  "i_plant": {
+   "source": "inter16",
+   "w": 15,
+   "h": 22
+  },
+  "i_plant2": {
+   "source": "inter16",
+   "w": 12,
+   "h": 13
+  },
+  "i_oven": {
+   "source": "inter16",
+   "w": 48,
+   "h": 80
+  },
+  "rug_teal": {
+   "source": "inter16",
+   "w": 48,
+   "h": 48
+  },
+  "rug_blue": {
+   "source": "inter16",
+   "w": 48,
+   "h": 48
+  },
+  "rug_pink": {
+   "source": "inter16",
+   "w": 48,
+   "h": 48
+  },
+  "fountain": {
+   "source": "anim",
+   "w": 32,
+   "h": 32
+  },
+  "bedroom_160": {
+   "source": "Bedroom",
+   "idx": 160,
+   "w": 45,
+   "h": 28
+  },
+  "bedroom_161": {
+   "source": "Bedroom",
+   "idx": 161,
+   "w": 45,
+   "h": 28
+  },
+  "bedroom_162": {
+   "source": "Bedroom",
+   "idx": 162,
+   "w": 45,
+   "h": 28
+  },
+  "bedroom_163": {
+   "source": "Bedroom",
+   "idx": 163,
+   "w": 45,
+   "h": 16
+  },
+  "bedroom_164": {
+   "source": "Bedroom",
+   "idx": 164,
+   "w": 32,
+   "h": 39
+  },
+  "bedroom_165": {
+   "source": "Bedroom",
+   "idx": 165,
+   "w": 32,
+   "h": 32
+  },
+  "bedroom_166": {
+   "source": "Bedroom",
+   "idx": 166,
+   "w": 32,
+   "h": 16
+  },
+  "bedroom_167": {
+   "source": "Bedroom",
+   "idx": 167,
+   "w": 35,
+   "h": 28
+  },
+  "bedroom_168": {
+   "source": "Bedroom",
+   "idx": 168,
+   "w": 35,
+   "h": 28
+  },
+  "bedroom_169": {
+   "source": "Bedroom",
+   "idx": 169,
+   "w": 35,
+   "h": 28
+  },
+  "bedroom_172": {
+   "source": "Bedroom",
+   "idx": 172,
+   "w": 33,
+   "h": 20
+  },
+  "bedroom_173": {
+   "source": "Bedroom",
+   "idx": 173,
+   "w": 33,
+   "h": 20
+  },
+  "kitchen_164": {
+   "source": "Kitchen",
+   "idx": 164,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_165": {
+   "source": "Kitchen",
+   "idx": 165,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_166": {
+   "source": "Kitchen",
+   "idx": 166,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_167": {
+   "source": "Kitchen",
+   "idx": 167,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_168": {
+   "source": "Kitchen",
+   "idx": 168,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_169": {
+   "source": "Kitchen",
+   "idx": 169,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_170": {
+   "source": "Kitchen",
+   "idx": 170,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_171": {
+   "source": "Kitchen",
+   "idx": 171,
+   "w": 14,
+   "h": 14
+  },
+  "kitchen_172": {
+   "source": "Kitchen",
+   "idx": 172,
+   "w": 13,
+   "h": 21
+  },
+  "kitchen_173": {
+   "source": "Kitchen",
+   "idx": 173,
+   "w": 13,
+   "h": 21
+  },
+  "kitchen_174": {
+   "source": "Kitchen",
+   "idx": 174,
+   "w": 13,
+   "h": 21
+  },
+  "kitchen_175": {
+   "source": "Kitchen",
+   "idx": 175,
+   "w": 13,
+   "h": 21
+  },
+  "bathroom_0": {
+   "source": "Bathroom",
+   "idx": 0,
+   "w": 32,
+   "h": 18
+  },
+  "bathroom_4": {
+   "source": "Bathroom",
+   "idx": 4,
+   "w": 48,
+   "h": 30
+  },
+  "bathroom_5": {
+   "source": "Bathroom",
+   "idx": 5,
+   "w": 14,
+   "h": 34
+  },
+  "bathroom_6": {
+   "source": "Bathroom",
+   "idx": 6,
+   "w": 14,
+   "h": 34
+  },
+  "bathroom_7": {
+   "source": "Bathroom",
+   "idx": 7,
+   "w": 14,
+   "h": 34
+  },
+  "bathroom_8": {
+   "source": "Bathroom",
+   "idx": 8,
+   "w": 14,
+   "h": 34
+  },
+  "bathroom_11": {
+   "source": "Bathroom",
+   "idx": 11,
+   "w": 20,
+   "h": 29
+  },
+  "bathroom_12": {
+   "source": "Bathroom",
+   "idx": 12,
+   "w": 20,
+   "h": 16
+  },
+  "bathroom_13": {
+   "source": "Bathroom",
+   "idx": 13,
+   "w": 20,
+   "h": 18
+  },
+  "bathroom_249": {
+   "source": "Bathroom",
+   "idx": 249,
+   "w": 61,
+   "h": 26
+  },
+  "bathroom_250": {
+   "source": "Bathroom",
+   "idx": 250,
+   "w": 28,
+   "h": 29
+  },
+  "bathroom_251": {
+   "source": "Bathroom",
+   "idx": 251,
+   "w": 28,
+   "h": 29
+  },
+  "gym_0": {
+   "source": "Gym",
+   "idx": 0,
+   "w": 44,
+   "h": 36
+  },
+  "gym_1": {
+   "source": "Gym",
+   "idx": 1,
+   "w": 44,
+   "h": 36
+  },
+  "gym_2": {
+   "source": "Gym",
+   "idx": 2,
+   "w": 44,
+   "h": 36
+  },
+  "gym_3": {
+   "source": "Gym",
+   "idx": 3,
+   "w": 44,
+   "h": 36
+  },
+  "gym_4": {
+   "source": "Gym",
+   "idx": 4,
+   "w": 40,
+   "h": 23
+  },
+  "gym_50": {
+   "source": "Gym",
+   "idx": 50,
+   "w": 28,
+   "h": 23
+  },
+  "gym_51": {
+   "source": "Gym",
+   "idx": 51,
+   "w": 32,
+   "h": 18
+  },
+  "gym_53": {
+   "source": "Gym",
+   "idx": 53,
+   "w": 20,
+   "h": 19
+  },
+  "gym_54": {
+   "source": "Gym",
+   "idx": 54,
+   "w": 20,
+   "h": 19
+  },
+  "gym_55": {
+   "source": "Gym",
+   "idx": 55,
+   "w": 20,
+   "h": 19
+  },
+  "gym_56": {
+   "source": "Gym",
+   "idx": 56,
+   "w": 18,
+   "h": 18
+  },
+  "gym_57": {
+   "source": "Gym",
+   "idx": 57,
+   "w": 18,
+   "h": 18
+  },
+  "classroom_and_library_0": {
+   "source": "Classroom_and_library",
+   "idx": 0,
+   "w": 12,
+   "h": 20
+  },
+  "classroom_and_library_1": {
+   "source": "Classroom_and_library",
+   "idx": 1,
+   "w": 57,
+   "h": 25
+  },
+  "classroom_and_library_2": {
+   "source": "Classroom_and_library",
+   "idx": 2,
+   "w": 57,
+   "h": 25
+  },
+  "classroom_and_library_3": {
+   "source": "Classroom_and_library",
+   "idx": 3,
+   "w": 18,
+   "h": 31
+  },
+  "classroom_and_library_27": {
+   "source": "Classroom_and_library",
+   "idx": 27,
+   "w": 13,
+   "h": 21
+  },
+  "classroom_and_library_28": {
+   "source": "Classroom_and_library",
+   "idx": 28,
+   "w": 13,
+   "h": 21
+  },
+  "classroom_and_library_29": {
+   "source": "Classroom_and_library",
+   "idx": 29,
+   "w": 32,
+   "h": 23
+  },
+  "classroom_and_library_30": {
+   "source": "Classroom_and_library",
+   "idx": 30,
+   "w": 32,
+   "h": 25
+  },
+  "classroom_and_library_31": {
+   "source": "Classroom_and_library",
+   "idx": 31,
+   "w": 12,
+   "h": 20
+  },
+  "classroom_and_library_32": {
+   "source": "Classroom_and_library",
+   "idx": 32,
+   "w": 12,
+   "h": 20
+  },
+  "classroom_and_library_69": {
+   "source": "Classroom_and_library",
+   "idx": 69,
+   "w": 16,
+   "h": 19
+  },
+  "classroom_and_library_71": {
+   "source": "Classroom_and_library",
+   "idx": 71,
+   "w": 16,
+   "h": 19
+  },
+  "generic_511": {
+   "source": "Generic",
+   "idx": 511,
+   "w": 38,
+   "h": 37
+  },
+  "generic_512": {
+   "source": "Generic",
+   "idx": 512,
+   "w": 16,
+   "h": 37
+  },
+  "generic_513": {
+   "source": "Generic",
+   "idx": 513,
+   "w": 38,
+   "h": 37
+  },
+  "generic_514": {
+   "source": "Generic",
+   "idx": 514,
+   "w": 16,
+   "h": 37
+  },
+  "generic_515": {
+   "source": "Generic",
+   "idx": 515,
+   "w": 64,
+   "h": 21
+  },
+  "generic_618": {
+   "source": "Generic",
+   "idx": 618,
+   "w": 32,
+   "h": 13
+  },
+  "generic_619": {
+   "source": "Generic",
+   "idx": 619,
+   "w": 32,
+   "h": 13
+  },
+  "generic_620": {
+   "source": "Generic",
+   "idx": 620,
+   "w": 32,
+   "h": 20
+  },
+  "generic_621": {
+   "source": "Generic",
+   "idx": 621,
+   "w": 32,
+   "h": 20
+  },
+  "generic_622": {
+   "source": "Generic",
+   "idx": 622,
+   "w": 32,
+   "h": 20
+  },
+  "generic_623": {
+   "source": "Generic",
+   "idx": 623,
+   "w": 64,
+   "h": 16
+  },
+  "generic_624": {
+   "source": "Generic",
+   "idx": 624,
+   "w": 14,
+   "h": 14
+  }
+ },
+ "meta": {
+  "screen": 64,
+  "hud_h": 7,
+  "sub_h": 8,
+  "view_y": 7,
+  "view_h": 49,
+  "wall_h": 16,
+  "skirt_h": 2,
+  "play_h": 56,
+  "map_w": 176,
+  "map_h": 80,
+  "format": "RGB565 little-endian, row-major, 64x64 = 8192 bytes"
+ }
+}

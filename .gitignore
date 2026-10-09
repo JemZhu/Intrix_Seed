@@ -1,0 +1,60 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyc
+.DS_Store
+venv/
+venv_new/
+.venv/
+
+# ── 本机配置：含 API key / 内网地址，不入库 ────────────
+pixellife/llm_config.json
+pixellife/feeds_config.json
+pixellife/worldlog_config.json
+pixellife/llm_usage.json
+client_settings.json
+gifclock_config.json
+
+# ── 运行态数据：存档 / 记忆 / 日志 / 预览 ──────────────
+pixellife/state.json
+pixellife/memory/
+pixellife/worldlog/
+pixelperson_save.json
+*.log
+logs/
+preview/
+memory_live_check.json
+memory_seed_check.json
+
+# ── 回滚备份与旧的 checkout ────────────────────────────
+*.bak
+*.bak_*
+*.py.bak
+.deploy_backup/
+themes_backup_*/
+themes/*.bak
+themes/test_frames/
+
+# ── 开发期一次性脚本 ───────────────────────────────────
+patch_v*.py
+smoke_v*.py
+probe_*.py
+verify_*.py
+debug*_v*.py
+seed_memory.py
+render_homes.py
+render_visit.py
+*_report.json
+*_smoke.json
+probe_anchor.*
+fetch_pearl.*
+update-led-status.sh
+canary_v*.txt
+Intrix_Seed_server_v*.zip
+
+# ── 未引用的大体积字体（代码里没有引用，可自行下载）───
+NotoSansCJK.otf
+wqy-zenhei.ttc
+
+# ── ESP32 固件：闭源，不随服务端发布 ───────────
+client/

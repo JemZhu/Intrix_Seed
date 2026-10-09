@@ -1,0 +1,14 @@
+{
+ "enabled": true,
+ "url": "http://127.0.0.1:8080/v1",
+ "api_key": "YOUR_API_KEY_HERE",
+ "model": "",
+ "max_tokens": 4096,
+ "ctx_tokens": 128000,
+ "concurrency": 4,
+ "timeout": 25,
+ "temperature": 0.85,
+ "thinking": false,
+ "decide": true,
+ "chat": true
+}
